@@ -169,6 +169,30 @@ dialogs = {
         "duel_1_win": [
             (
                 "fallen_of_argyros",
+                "That went better than last time...",
+            ),
+            (
+                "spright_pixies",
+                "Yeah, next time we'll get them for sure!",
+            ),
+        ],
+        "duel_1_lose": [
+            (
+                "fallen_of_argyros",
+                "That didn't go as planned... We won't be underprepared next time around though.",
+            ),
+            (
+                "spright_pixies",
+                "Yeah, next time we'll get them for sure!",
+            ),
+        ],
+        "duel_2": [
+            ("therion_irregular", "This is the final showdown!!"),
+            ("fallen_of_argyros", "It will definetly be the final one for you!"),
+        ],
+        "duel_2_win": [
+            (
+                "fallen_of_argyros",
                 "Finnally that guy is dealt with. And the Spright Energy can rest in peace...",
             ),
             (
@@ -176,7 +200,7 @@ dialogs = {
                 "I feel like there's more to this tho... Let's not relax just yet.",
             ),
         ],
-        "duel_1_lose": [
+        "duel_2_lose": [
             (
                 "fallen_of_argyros",
                 "That thing is just too strong... It should leave us alone for now tho...",
@@ -208,7 +232,7 @@ dialogs = {
                 "Let me introduce you to some of my best men!",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "ronintoadin",
                 "Many people were inspired by your fight and joined our cause!",
@@ -236,7 +260,7 @@ dialogs = {
                 "Come meet some of my friends!",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "baby_raccoon_ponpoko",
                 "That dude was scary looking, I'll ask some more friends to join us!",
@@ -264,7 +288,7 @@ dialogs = {
                 "00111110 00100000 01010011 01110100 01100001 01110100 01110101 01110011 00111010 00100000 01000011 01101111 01101110 01101110 01100101 01100011 01110100 01100101 01100100 00100000 01110100 01101111 00100000 01001110 01100101 01110100 01110111 01101111 01110010 01101011 00001010 00111110 00100000 01010011 01110100 01100001 01110100 01110101 01110011 00111010 00100000 01000100 01101111 01110111 01101110 01101100 01101111 01100001 01100100 01101001 01101110 01100111 00101110 00101110 00101110",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "stack_reviver",
                 "00111110 00100000 01000001 01101100 01101100 01101001 01100101 01110011 00101011 00101011",
@@ -292,7 +316,7 @@ dialogs = {
                 "Here are the other lost souls that are stuck here...",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "dark_beckoning_beast",
                 "Look, we have some newcommers...",
@@ -320,7 +344,7 @@ dialogs = {
                 "!",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "paces_light_of_the_ghoti",
                 "!!",
@@ -348,7 +372,7 @@ dialogs = {
                 "If they start acting hostile, I sure hope that you can run quickly...",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "paces_light_of_the_ghoti",
                 "!!",
@@ -373,7 +397,7 @@ dialogs = {
                 "We have a lot of different machines here, make sure to be nice to everyone!",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "crystron_citree",
                 "For the next battle we started mass-producing new machines!",
@@ -401,7 +425,7 @@ dialogs = {
                 "Say hello to the forest...",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "predaplant_chlamydosundew",
                 "Your energy makes new plants grow so quickly...",
@@ -429,7 +453,7 @@ dialogs = {
                 "See! You guys would work great together! (Just don't draw me)",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "psy_frame_driver",
                 "If we accelerate we might find more psychics soon!",
@@ -457,7 +481,7 @@ dialogs = {
                 "Be careful with some of these reptiles, they will bite. But don't worry, I'll protect you... you're my treat!",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "reptilianne_lamia",
                 "More and more reptiles seem to be interested in you... I'm not letting them touch you tho, so all good!",
@@ -485,7 +509,7 @@ dialogs = {
                 "Look at the other masters! Their spells are so powerful!",
             )
         ],
-        "pack_2": [
+        "pack_1": [
             (
                 "gagaga_sister",
                 "The masters were impressed by your techniques, more of them came to learn from you!",
@@ -507,11 +531,22 @@ def area_stages(area):
             [f"area: {area}_1"]
         ],
         [
-            [f"text: {area}_pack_2"],
+            [f"text: {area}_pack_1"],
             [f"pick: {type_dict[area].upper()}_MD_PACK", "pick: SPELL_TRAP_PACK"],
             [f"pick: {type_dict[area].upper()}_ED_PACK", "pick: SPECIAL_PACK"],
             ["text: duel_1"],
             [f"area: {area}_2"]
+        ],
+        [
+            [f"pick: {type_dict[area].upper()}_MD_PACK", "pick: SPELL_TRAP_PACK"],
+            [f"pick: {type_dict[area].upper()}_ED_PACK", "pick: SPECIAL_PACK"],
+            [f"pick: {type_dict[area].upper()}_POWER_PACK"],
+            ["text: duel_2"],
+            [f"text: {area}_select_path"]
+        ],
+        [
+            [f"text: {area}_start"],
+            [f"text: {area}_pack"],
         ]
     ]
 
@@ -619,13 +654,20 @@ def getAreaTextObjects(area):
             "chain": "bans: before_dupe",
             "vars": "loop=>2",
         },
-        "pack_2": {
+        "pack_1": {
             "micon": "pack.webp",  # TODO: more custom event icons
             "mdesc": "Growing the party",
             "image": f"{area}.webp",
-            "parts": dialogToParts(dialogs[area]["pack_2"]),
+            "parts": dialogToParts(dialogs[area]["pack_1"]),
             "vars": "chain_to_ed=>false",
             "chain": f"pack: {type_dict[area].upper()}_MD_PACK",
+        },
+        "select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": f"{area}.webp",
+            "parts": [], # TODO: write more dialog
+            "chain": f"choice: {area}_select_path",
         }
     }
 
@@ -695,7 +737,7 @@ choice_objects = {
                 "name": "Archetypal Extra Deck Card",
                 "desc": "Get an Extra Deck card from your chosen area's pack",
                 "img": "archetypal_extradeck_pack.webp",
-                "chain": "fork: archetypal_extradeck_pack",
+                "chain": "fork: archetypal_extradeck_pick",
             },
             {
                 "name": "Generic Spell/Trap Cards",
@@ -713,6 +755,22 @@ choice_objects = {
         ],
     }
 }
+for area in areas:
+    choice_objects[f"{area}_select_path"] = {
+        "micon": "area.webp",
+        "image": f"{area}.webp",
+        "title": "Where do you want to travel to?",
+        "list": [
+            {
+                "name": transformToName(other_area, special_area_names),
+                "desc": f"This area is full of {transformToName(type_dict[other_area])} Monsters!\n\nFeatured Archetypes: {featured_archetypes[other_area]}",
+                "img": f"{other_area}.webp",
+                "vars": f"chosen_other_area=>{other_area}",
+                "chain": f"area: {other_area}_3",
+            }
+            for other_area in areas if other_area != area
+        ],
+    }
 # endregion
 
 # region fork_objects
@@ -751,7 +809,7 @@ pack_objects = {
     "STARTER_BONUS": {"chain": "text: starter_end"},
 }
 for area in areas:
-    pack_objects[f"{type_dict[area].upper()}_MD_PACK"] = {"chain": f"fork: {area}_ED_PACK"}
+    pack_objects[f"{type_dict[area].upper()}_MD_PACK"] = {"chain": f"fork: {area}_chain_to_ed"}
     pack_objects[f"{type_dict[area].upper()}_ED_PACK"] = {}
     pack_objects[f"{type_dict[area].upper()}_BONUS_PACK"] = {}
 # endregion
@@ -776,6 +834,10 @@ for area in areas:
     pick_objects[f"{type_dict[area].upper()}_ED_PACK"] = {
         "micon": "pack.webp",
         "mdesc": "Pick Archetypal Extra Deck Cards",
+    }
+    pick_objects[f"{type_dict[area].upper()}_POWER_PACK"] = {
+        "micon": "pack.webp",
+        "mdesc": "Maximizing the Power Level",
     }
 # endregion
 
@@ -851,6 +913,14 @@ duel_objects = {
         "lives": 1,
         "wins": "text: duel_0_win",
         "lose": "text: duel_0_lose",
+    },
+    "duel_1": {
+        "image": "endless_engine_argyro_system.webp",
+        "dbimg": "therion_irregular_avatar.webp",
+        "title": "Therion Irregular",
+        "lives": 1,
+        "wins": "text: duel_1_win",
+        "lose": "text: duel_1_lose",
     }
 }
 # endregion
