@@ -48,6 +48,7 @@ special_charater_names = {
     "paces_light_of_the_ghoti": "Paces, Light of the Ghoti",
     "psy_frame_driver": "PSY-Frame Driver",
     "fallen_of_argyros": "Fallen of Argyros",
+    "therion_empress_alasia": 'Therion "Empress" Alasia'
 }
 featured_archetypes = {
     "wetlands": "Frog, Paleozoic",
@@ -169,30 +170,6 @@ dialogs = {
         "duel_1_win": [
             (
                 "fallen_of_argyros",
-                "That went better than last time...",
-            ),
-            (
-                "spright_pixies",
-                "Yeah, next time we'll get them for sure!",
-            ),
-        ],
-        "duel_1_lose": [
-            (
-                "fallen_of_argyros",
-                "That didn't go as planned... We won't be underprepared next time around though.",
-            ),
-            (
-                "spright_pixies",
-                "Yeah, next time we'll get them for sure!",
-            ),
-        ],
-        "duel_2": [
-            ("therion_irregular", "This is the final showdown!!"),
-            ("fallen_of_argyros", "It will definetly be the final one for you!"),
-        ],
-        "duel_2_win": [
-            (
-                "fallen_of_argyros",
                 "Finnally that guy is dealt with. And the Spright Energy can rest in peace...",
             ),
             (
@@ -200,7 +177,7 @@ dialogs = {
                 "I feel like there's more to this tho... Let's not relax just yet.",
             ),
         ],
-        "duel_2_lose": [
+        "duel_1_lose": [
             (
                 "fallen_of_argyros",
                 "That thing is just too strong... It should leave us alone for now tho...",
@@ -209,6 +186,58 @@ dialogs = {
                 "spright_jet",
                 "You're probably right. I feel like there's more to this tho... Let's not relax just yet.",
             ),
+        ],
+        "duel_2": [
+            ("therion_empress_alasia", "You're the one who defeated the king? I expected someone with a higher level..."),
+            ("fallen_of_argyros", "So you're the one who sent that thing!"),
+        ],
+        "duel_2_win": [
+            (
+                "fallen_of_argyros",
+                "That thing is way stronger than that other guy! We got lucky and escpaed without any major injuries...",
+            ),
+            (
+                "spright_pixies",
+                "I'm confident we'll defeat her with more preparation!",
+            ),
+        ],
+        "duel_2_lose": [
+            (
+                "fallen_of_argyros",
+                "That thing is way stronger than that other guy! I don't know if we'd survive another battle...",
+            ),
+            (
+                "spright_pixies",
+                "I'm confident we'll defeat her with more preparation!",
+            ),
+        ],
+        "duel_3": [
+            ("therion_empress_alasia", "You still haven't given up? This is gonna be your demise!"),
+            ("fallen_of_argyros", "You underestimate the power of Level 2!"),
+        ],
+        "duel_3_win": [
+            (
+                "fallen_of_argyros",
+                "The empress isn't as strong as she thinks, next time we'll finish her for sure!",
+            ),
+            (
+                "spright_blue",
+                "Let's keep our guard up just in case...",
+            ),
+        ],
+        "duel_3_lose": [
+            (
+                "fallen_of_argyros",
+                "I don't think we can defeat her...",
+            ),
+            (
+                "spright_blue",
+                "We can't give up... the next battle will decide it all...",
+            ),
+        ],
+        "duel_4": [
+            ("therion_empress_alasia", "You still haven't given up? This is gonna be your demise!"),
+            ("fallen_of_argyros", "You underestimate the power of Level 2!"),
         ],
     },
     "wetlands": {
@@ -517,7 +546,13 @@ dialogs = {
         ]
     },
 }
-
+# TODOs before playable:
+# TODO: change duel micon and mdesc for empress fights
+# TODO: Rename lose prize from chosen area to current, also replace chaining to correct curent, not first area (idea: loser can also pick old instead of current archetypal pack)
+# TODO: Empress bust pic
+# TODO: choice to skip text at the beginning of campaign
+# TODO: final win/lose screen
+# TODO: Remove redundant?
 
 def area_stages(area):
     return [
@@ -538,8 +573,7 @@ def area_stages(area):
             [f"area: {area}_2"]
         ],
         [
-            [f"pick: {type_dict[area].upper()}_MD_PACK", "pick: SPELL_TRAP_PACK"],
-            [f"pick: {type_dict[area].upper()}_ED_PACK", "pick: SPECIAL_PACK"],
+            ["pick: SPELL_TRAP_PACK", "pick: SPECIAL_PACK"],
             [f"pick: {type_dict[area].upper()}_POWER_PACK"],
             ["text: duel_2"],
             [f"text: {area}_select_path"]
@@ -547,6 +581,15 @@ def area_stages(area):
         [
             [f"text: {area}_start"],
             [f"text: {area}_pack"],
+            ["pick: SPELL_TRAP_PACK", "pick: SPECIAL_PACK"],
+            [f"pick: {type_dict[area].upper()}_POWER_PACK", "text: old_power_pick"],
+            ["text: duel_3"],
+            [f"area: {area}_4"]
+        ],
+        [
+            [f"text: old_maindeck_pick", f"pick: {type_dict[area].upper()}_MD_PACK", "text: old_extradeck_pick", f"pick: {type_dict[area].upper()}_ED_PACK", "pick: SPELL_TRAP_PACK", "pick: SPECIAL_PACK"],
+            [f"pick: {type_dict[area].upper()}_POWER_PACK", "text: old_power_pick"],
+            ["text: duel_4"]
         ]
     ]
 
@@ -673,26 +716,28 @@ def getAreaTextObjects(area):
 
 
 def getDuelTextObjects(num):
-    return {
+    objs = {
         num: {
             "micon": "therion_irregular.webp",
             "mdesc": "The Irregular",
             "image": "endless_engine_argyro_system.webp",
             "parts": dialogToParts(dialogs["duel"][f"duel_{num}"]),
             "chain": f"duel: duel_{num}",
-        },
-        f"{num}_win": {
+        }
+    }
+    if f"duel_{num}_win" in dialogs["duel"]:
+        objs[f"{num}_win"] = {
             "image": "endless_engine_argyro_system.webp",
             "parts": dialogToParts(dialogs["duel"][f"duel_{num}_win"]),
             "chain": f"swap: repair_sword",
-        },
-        f"{num}_lose": {
+        }
+    if f"duel_{num}_lose" in dialogs["duel"]:
+        objs[f"{num}_lose"] = {
             "image": "endless_engine_argyro_system.webp",
             "parts": dialogToParts(dialogs["duel"][f"duel_{num}_lose"]),
             "chain": f"choice: duel_lose",
         }
-    }
-
+    return objs
 
 text_objects = {}
 for key, val in dialogs["beginning"].items():
@@ -704,6 +749,24 @@ for i in range(len(dialogs["duel"])):
     if f"duel_{i}" in dialogs["duel"].keys():
         for key, val in getDuelTextObjects(i).items():
             text_objects[f"duel_{key}"] = val
+text_objects["old_maindeck_pick"] = {
+            "micon": "pack.webp",  # TODO: more custom event icons
+            "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
+            "parts": [],
+            "chain": f"fork: archetypal_first_maindeck_pick",
+        }
+text_objects["old_extradeck_pick"] = {
+            "micon": "pack.webp",  # TODO: more custom event icons
+            "mdesc": "Pick an Archetypal Extra Deck Card of the previous area",
+            "parts": [],
+            "chain": f"fork: archetypal_first_extradeck_pick",
+        }
+text_objects["old_power_pick"] = {
+            "micon": "pack.webp",  # TODO: more custom event icons
+            "mdesc": "Maximizing the Power Level of the previous area",
+            "parts": [],
+            "chain": f"fork: archetypal_first_power_pick",
+        }
 # endregion
 
 # region choice_objects
@@ -717,7 +780,7 @@ choice_objects = {
                 "name": transformToName(area, special_area_names),
                 "desc": f"This area is full of {transformToName(type_dict[area])} Monsters!\n\nFeatured Archetypes: {featured_archetypes[area]}",
                 "img": f"{area}.webp",
-                "vars": f"chosen_area=>{area}",
+                "vars": f"chosen_first_area=>{area}",
                 "chain": f"area: {area}_0",
             }
             for area in areas
@@ -731,13 +794,13 @@ choice_objects = {
                 "name": "Archetypal Main Deck Cards",
                 "desc": "Get more Main Deck cards from your chosen area's pack",
                 "img": "archetypal_maindeck_pack.webp",
-                "chain": "fork: archetypal_maindeck_pick",
+                "chain": "fork: archetypal_first_maindeck_pick",
             },
             {
                 "name": "Archetypal Extra Deck Card",
                 "desc": "Get an Extra Deck card from your chosen area's pack",
                 "img": "archetypal_extradeck_pack.webp",
-                "chain": "fork: archetypal_extradeck_pick",
+                "chain": "fork: archetypal_first_extradeck_pick",
             },
             {
                 "name": "Generic Spell/Trap Cards",
@@ -762,13 +825,13 @@ for area in areas:
         "title": "Where do you want to travel to?",
         "list": [
             {
-                "name": transformToName(other_area, special_area_names),
-                "desc": f"This area is full of {transformToName(type_dict[other_area])} Monsters!\n\nFeatured Archetypes: {featured_archetypes[other_area]}",
-                "img": f"{other_area}.webp",
-                "vars": f"chosen_other_area=>{other_area}",
-                "chain": f"area: {other_area}_3",
+                "name": transformToName(second_area, special_area_names),
+                "desc": f"This area is full of {transformToName(type_dict[second_area])} Monsters!\n\nFeatured Archetypes: {featured_archetypes[second_area]}",
+                "img": f"{second_area}.webp",
+                "vars": f"chosen_second_area=>{second_area}",
+                "chain": f"area: {second_area}_3",
             }
-            for other_area in areas if other_area != area
+            for second_area in areas if second_area != area
         ],
     }
 # endregion
@@ -784,15 +847,21 @@ fork_objects = {
         {"loop=2": "bans: before_dupe"},
         {"loop=1": "bans: before_dupe"},
     ],
-    "archetypal_maindeck_pick": [
+    "archetypal_first_maindeck_pick": [
         {
-            f"chosen_area={area}": f"pick: {type_dict[area].upper()}_MD_PACK"
+            f"chosen_first_area={area}": f"pick: {type_dict[area].upper()}_MD_PACK"
         }
         for area in areas
     ],
-    "archetypal_extradeck_pick": [
+    "archetypal_first_extradeck_pick": [
         {
-            f"chosen_area={area}": f"pick: {type_dict[area].upper()}_ED_PACK"
+            f"chosen_first_area={area}": f"pick: {type_dict[area].upper()}_ED_PACK"
+        }
+        for area in areas
+    ],
+    "archetypal_first_power_pick": [
+        {
+            f"chosen_first_area={area}": f"pick: {type_dict[area].upper()}_POWER_PACK"
         }
         for area in areas
     ]
@@ -833,7 +902,7 @@ for area in areas:
     }
     pick_objects[f"{type_dict[area].upper()}_ED_PACK"] = {
         "micon": "pack.webp",
-        "mdesc": "Pick Archetypal Extra Deck Cards",
+        "mdesc": "Pick an Archetypal Extra Deck Card",
     }
     pick_objects[f"{type_dict[area].upper()}_POWER_PACK"] = {
         "micon": "pack.webp",
@@ -905,24 +974,18 @@ bans_objects = {
 #endregion
 
 # region duel_objects
-duel_objects = {
-    "duel_0": {
+duel_objects = {}
+for i in range(len(dialogs["duel"])):
+    if f"duel_{i}" in dialogs["duel"].keys():
+        enemy = "therion_irregular" if i <= 1 else "therion_empress_alasia"
+        duel_objects[f"duel_{i}"] = {
         "image": "endless_engine_argyro_system.webp",
-        "dbimg": "therion_irregular_avatar.webp",
-        "title": "Therion Irregular",
+        "dbimg": f"{enemy}_avatar.webp",
+        "title": transformToName(enemy),
         "lives": 1,
-        "wins": "text: duel_0_win",
-        "lose": "text: duel_0_lose",
-    },
-    "duel_1": {
-        "image": "endless_engine_argyro_system.webp",
-        "dbimg": "therion_irregular_avatar.webp",
-        "title": "Therion Irregular",
-        "lives": 1,
-        "wins": "text: duel_1_win",
-        "lose": "text: duel_1_lose",
+        "wins": f"text: duel_{i}_win",
+        "lose": f"text: duel_{i}_lose",
     }
-}
 # endregion
 
 # region vars_objects
@@ -944,4 +1007,4 @@ result = {
 }
 
 
-pyperclip.copy(json.dumps(result))
+pyperclip.copy(json.dumps(result, indent=4))

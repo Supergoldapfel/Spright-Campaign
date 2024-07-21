@@ -62,7 +62,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: wetlands_select_path"
+                    "area: wetlands_2"
                 ]
             ]
         },
@@ -72,10 +72,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: AQUA_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: wetlands_select_path"
+                ]
+            ]
+        },
+        "wetlands_3": {
+            "image": "wetlands.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: wetlands_start"
                 ],
                 [
                     "text: wetlands_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: AQUA_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: wetlands_4"
+                ]
+            ]
+        },
+        "wetlands_4": {
+            "image": "wetlands.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: AQUA_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: AQUA_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: AQUA_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -127,7 +183,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: ancient_forest_select_path"
+                    "area: ancient_forest_2"
                 ]
             ]
         },
@@ -137,10 +193,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: BEAST_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: ancient_forest_select_path"
+                ]
+            ]
+        },
+        "ancient_forest_3": {
+            "image": "ancient_forest.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: ancient_forest_start"
                 ],
                 [
                     "text: ancient_forest_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: BEAST_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: ancient_forest_4"
+                ]
+            ]
+        },
+        "ancient_forest_4": {
+            "image": "ancient_forest.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: BEAST_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: BEAST_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: BEAST_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -192,7 +304,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: cynet_universe_select_path"
+                    "area: cynet_universe_2"
                 ]
             ]
         },
@@ -202,10 +314,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: CYBERSE_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: cynet_universe_select_path"
+                ]
+            ]
+        },
+        "cynet_universe_3": {
+            "image": "cynet_universe.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: cynet_universe_start"
                 ],
                 [
                     "text: cynet_universe_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: CYBERSE_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: cynet_universe_4"
+                ]
+            ]
+        },
+        "cynet_universe_4": {
+            "image": "cynet_universe.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: CYBERSE_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: CYBERSE_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: CYBERSE_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -257,7 +425,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: dark_world_select_path"
+                    "area: dark_world_2"
                 ]
             ]
         },
@@ -267,10 +435,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: FIEND_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: dark_world_select_path"
+                ]
+            ]
+        },
+        "dark_world_3": {
+            "image": "dark_world.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: dark_world_start"
                 ],
                 [
                     "text: dark_world_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: FIEND_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: dark_world_4"
+                ]
+            ]
+        },
+        "dark_world_4": {
+            "image": "dark_world.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: FIEND_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: FIEND_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: FIEND_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -322,7 +546,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: deepest_depths_select_path"
+                    "area: deepest_depths_2"
                 ]
             ]
         },
@@ -332,10 +556,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: FISH_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: deepest_depths_select_path"
+                ]
+            ]
+        },
+        "deepest_depths_3": {
+            "image": "deepest_depths.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: deepest_depths_start"
                 ],
                 [
                     "text: deepest_depths_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: FISH_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: deepest_depths_4"
+                ]
+            ]
+        },
+        "deepest_depths_4": {
+            "image": "deepest_depths.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: FISH_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: FISH_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: FISH_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -387,7 +667,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: world_armor_select_path"
+                    "area: world_armor_2"
                 ]
             ]
         },
@@ -397,10 +677,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: INSECT_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: world_armor_select_path"
+                ]
+            ]
+        },
+        "world_armor_3": {
+            "image": "world_armor.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: world_armor_start"
                 ],
                 [
                     "text: world_armor_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: INSECT_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: world_armor_4"
+                ]
+            ]
+        },
+        "world_armor_4": {
+            "image": "world_armor.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: INSECT_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: INSECT_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: INSECT_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -452,7 +788,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: geartown_select_path"
+                    "area: geartown_2"
                 ]
             ]
         },
@@ -462,10 +798,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: MACHINE_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: geartown_select_path"
+                ]
+            ]
+        },
+        "geartown_3": {
+            "image": "geartown.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: geartown_start"
                 ],
                 [
                     "text: geartown_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: MACHINE_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: geartown_4"
+                ]
+            ]
+        },
+        "geartown_4": {
+            "image": "geartown.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: MACHINE_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: MACHINE_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: MACHINE_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -517,7 +909,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: world_tree_select_path"
+                    "area: world_tree_2"
                 ]
             ]
         },
@@ -527,10 +919,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: PLANT_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: world_tree_select_path"
+                ]
+            ]
+        },
+        "world_tree_3": {
+            "image": "world_tree.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: world_tree_start"
                 ],
                 [
                     "text: world_tree_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: PLANT_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: world_tree_4"
+                ]
+            ]
+        },
+        "world_tree_4": {
+            "image": "world_tree.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: PLANT_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: PLANT_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: PLANT_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -582,7 +1030,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: psychic_feel_zone_select_path"
+                    "area: psychic_feel_zone_2"
                 ]
             ]
         },
@@ -592,10 +1040,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: PSYCHIC_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: psychic_feel_zone_select_path"
+                ]
+            ]
+        },
+        "psychic_feel_zone_3": {
+            "image": "psychic_feel_zone.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: psychic_feel_zone_start"
                 ],
                 [
                     "text: psychic_feel_zone_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: PSYCHIC_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: psychic_feel_zone_4"
+                ]
+            ]
+        },
+        "psychic_feel_zone_4": {
+            "image": "psychic_feel_zone.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: PSYCHIC_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: PSYCHIC_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: PSYCHIC_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -647,7 +1151,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: venom_swamp_select_path"
+                    "area: venom_swamp_2"
                 ]
             ]
         },
@@ -657,10 +1161,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: REPTILE_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: venom_swamp_select_path"
+                ]
+            ]
+        },
+        "venom_swamp_3": {
+            "image": "venom_swamp.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: venom_swamp_start"
                 ],
                 [
                     "text: venom_swamp_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: REPTILE_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: venom_swamp_4"
+                ]
+            ]
+        },
+        "venom_swamp_4": {
+            "image": "venom_swamp.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: REPTILE_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: REPTILE_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: REPTILE_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         },
@@ -712,7 +1272,7 @@
                     "text: duel_1"
                 ],
                 [
-                    "text: grand_spellbook_tower_select_path"
+                    "area: grand_spellbook_tower_2"
                 ]
             ]
         },
@@ -722,10 +1282,66 @@
             "mdesc": "Continue",
             "mdata": [
                 [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: SPELLCASTER_POWER_PACK"
+                ],
+                [
+                    "text: duel_2"
+                ],
+                [
+                    "text: grand_spellbook_tower_select_path"
+                ]
+            ]
+        },
+        "grand_spellbook_tower_3": {
+            "image": "grand_spellbook_tower.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
                     "text: grand_spellbook_tower_start"
                 ],
                 [
                     "text: grand_spellbook_tower_pack"
+                ],
+                [
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: SPELLCASTER_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_3"
+                ],
+                [
+                    "area: grand_spellbook_tower_4"
+                ]
+            ]
+        },
+        "grand_spellbook_tower_4": {
+            "image": "grand_spellbook_tower.webp",
+            "micon": "area.webp",
+            "mdesc": "Continue",
+            "mdata": [
+                [
+                    "text: old_maindeck_pick",
+                    "pick: SPELLCASTER_MD_PACK",
+                    "text: old_extradeck_pick",
+                    "pick: SPELLCASTER_ED_PACK",
+                    "pick: SPELL_TRAP_PACK",
+                    "pick: SPECIAL_PACK"
+                ],
+                [
+                    "pick: SPELLCASTER_POWER_PACK",
+                    "text: old_power_pick"
+                ],
+                [
+                    "text: duel_4"
                 ]
             ]
         }
@@ -2340,6 +2956,240 @@
                 }
             ],
             "chain": "choice: duel_lose"
+        },
+        "duel_2": {
+            "micon": "therion_irregular.webp",
+            "mdesc": "The Irregular",
+            "image": "endless_engine_argyro_system.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "therion_empress_alasia_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Therion \"Empress\" Alasia"
+                },
+                {
+                    "type": "text",
+                    "content": "You're the one who defeated the king? I expected someone with a higher level..."
+                },
+                {
+                    "type": "bust",
+                    "content": "fallen_of_argyros_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Fallen of Argyros"
+                },
+                {
+                    "type": "text",
+                    "content": "So you're the one who sent that thing!"
+                }
+            ],
+            "chain": "duel: duel_2"
+        },
+        "duel_2_win": {
+            "image": "endless_engine_argyro_system.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "fallen_of_argyros_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Fallen of Argyros"
+                },
+                {
+                    "type": "text",
+                    "content": "That thing is way stronger than that other guy! We got lucky and escpaed without any major injuries..."
+                },
+                {
+                    "type": "bust",
+                    "content": "spright_pixies_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Spright Pixies"
+                },
+                {
+                    "type": "text",
+                    "content": "I'm confident we'll defeat her with more preparation!"
+                }
+            ],
+            "chain": "swap: repair_sword"
+        },
+        "duel_2_lose": {
+            "image": "endless_engine_argyro_system.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "fallen_of_argyros_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Fallen of Argyros"
+                },
+                {
+                    "type": "text",
+                    "content": "That thing is way stronger than that other guy! I don't know if we'd survive another battle..."
+                },
+                {
+                    "type": "bust",
+                    "content": "spright_pixies_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Spright Pixies"
+                },
+                {
+                    "type": "text",
+                    "content": "I'm confident we'll defeat her with more preparation!"
+                }
+            ],
+            "chain": "choice: duel_lose"
+        },
+        "duel_3": {
+            "micon": "therion_irregular.webp",
+            "mdesc": "The Irregular",
+            "image": "endless_engine_argyro_system.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "therion_empress_alasia_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Therion \"Empress\" Alasia"
+                },
+                {
+                    "type": "text",
+                    "content": "You still haven't given up? This is gonna be your demise!"
+                },
+                {
+                    "type": "bust",
+                    "content": "fallen_of_argyros_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Fallen of Argyros"
+                },
+                {
+                    "type": "text",
+                    "content": "You underestimate the power of Level 2!"
+                }
+            ],
+            "chain": "duel: duel_3"
+        },
+        "duel_3_win": {
+            "image": "endless_engine_argyro_system.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "fallen_of_argyros_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Fallen of Argyros"
+                },
+                {
+                    "type": "text",
+                    "content": "The empress isn't as strong as she thinks, next time we'll finish her for sure!"
+                },
+                {
+                    "type": "bust",
+                    "content": "spright_blue_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Spright Blue"
+                },
+                {
+                    "type": "text",
+                    "content": "Let's keep our guard up just in case..."
+                }
+            ],
+            "chain": "swap: repair_sword"
+        },
+        "duel_3_lose": {
+            "image": "endless_engine_argyro_system.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "fallen_of_argyros_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Fallen of Argyros"
+                },
+                {
+                    "type": "text",
+                    "content": "I don't think we can defeat her..."
+                },
+                {
+                    "type": "bust",
+                    "content": "spright_blue_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Spright Blue"
+                },
+                {
+                    "type": "text",
+                    "content": "We can't give up... the next battle will decide it all..."
+                }
+            ],
+            "chain": "choice: duel_lose"
+        },
+        "duel_4": {
+            "micon": "therion_irregular.webp",
+            "mdesc": "The Irregular",
+            "image": "endless_engine_argyro_system.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "therion_empress_alasia_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Therion \"Empress\" Alasia"
+                },
+                {
+                    "type": "text",
+                    "content": "You still haven't given up? This is gonna be your demise!"
+                },
+                {
+                    "type": "bust",
+                    "content": "fallen_of_argyros_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Fallen of Argyros"
+                },
+                {
+                    "type": "text",
+                    "content": "You underestimate the power of Level 2!"
+                }
+            ],
+            "chain": "duel: duel_4"
+        },
+        "old_maindeck_pick": {
+            "micon": "pack.webp",
+            "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
+            "parts": [],
+            "chain": "fork: archetypal_first_maindeck_pick"
+        },
+        "old_extradeck_pick": {
+            "micon": "pack.webp",
+            "mdesc": "Pick an Archetypal Extra Deck Card of the previous area",
+            "parts": [],
+            "chain": "fork: archetypal_first_extradeck_pick"
+        },
+        "old_power_pick": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level of the previous area",
+            "parts": [],
+            "chain": "fork: archetypal_first_power_pick"
         }
     },
     "choice": {
@@ -2352,77 +3202,77 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_area=>wetlands",
+                    "vars": "chosen_first_area=>wetlands",
                     "chain": "area: wetlands_0"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_area=>ancient_forest",
+                    "vars": "chosen_first_area=>ancient_forest",
                     "chain": "area: ancient_forest_0"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_area=>cynet_universe",
+                    "vars": "chosen_first_area=>cynet_universe",
                     "chain": "area: cynet_universe_0"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_area=>dark_world",
+                    "vars": "chosen_first_area=>dark_world",
                     "chain": "area: dark_world_0"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_area=>deepest_depths",
+                    "vars": "chosen_first_area=>deepest_depths",
                     "chain": "area: deepest_depths_0"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_area=>world_armor",
+                    "vars": "chosen_first_area=>world_armor",
                     "chain": "area: world_armor_0"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_area=>geartown",
+                    "vars": "chosen_first_area=>geartown",
                     "chain": "area: geartown_0"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_area=>world_tree",
+                    "vars": "chosen_first_area=>world_tree",
                     "chain": "area: world_tree_0"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_area=>psychic_feel_zone",
+                    "vars": "chosen_first_area=>psychic_feel_zone",
                     "chain": "area: psychic_feel_zone_0"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_area=>venom_swamp",
+                    "vars": "chosen_first_area=>venom_swamp",
                     "chain": "area: venom_swamp_0"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_area=>grand_spellbook_tower",
+                    "vars": "chosen_first_area=>grand_spellbook_tower",
                     "chain": "area: grand_spellbook_tower_0"
                 }
             ]
@@ -2435,13 +3285,13 @@
                     "name": "Archetypal Main Deck Cards",
                     "desc": "Get more Main Deck cards from your chosen area's pack",
                     "img": "archetypal_maindeck_pack.webp",
-                    "chain": "fork: archetypal_maindeck_pick"
+                    "chain": "fork: archetypal_first_maindeck_pick"
                 },
                 {
                     "name": "Archetypal Extra Deck Card",
                     "desc": "Get an Extra Deck card from your chosen area's pack",
                     "img": "archetypal_extradeck_pack.webp",
-                    "chain": "fork: archetypal_extradeck_pick"
+                    "chain": "fork: archetypal_first_extradeck_pick"
                 },
                 {
                     "name": "Generic Spell/Trap Cards",
@@ -2467,71 +3317,71 @@
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -2544,71 +3394,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -2621,71 +3471,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -2698,71 +3548,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -2775,71 +3625,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -2852,71 +3702,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -2929,71 +3779,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -3006,71 +3856,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -3083,71 +3933,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -3160,71 +4010,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Grand Spellbook Tower",
                     "desc": "This area is full of Spellcaster Monsters!\n\nFeatured Archetypes: Gagaga, Spellbook",
                     "img": "grand_spellbook_tower.webp",
-                    "vars": "chosen_other_area=>grand_spellbook_tower",
-                    "chain": "area: grand_spellbook_tower_2"
+                    "vars": "chosen_second_area=>grand_spellbook_tower",
+                    "chain": "area: grand_spellbook_tower_3"
                 }
             ]
         },
@@ -3237,71 +4087,71 @@
                     "name": "Wetlands",
                     "desc": "This area is full of Aqua Monsters!\n\nFeatured Archetypes: Frog, Paleozoic",
                     "img": "wetlands.webp",
-                    "vars": "chosen_other_area=>wetlands",
-                    "chain": "area: wetlands_2"
+                    "vars": "chosen_second_area=>wetlands",
+                    "chain": "area: wetlands_3"
                 },
                 {
                     "name": "Ancient Forest",
                     "desc": "This area is full of Beast Monsters!\n\nFeatured Archetypes: Raccoon, Mystical Beast, Melffy, Tri-Brigade",
                     "img": "ancient_forest.webp",
-                    "vars": "chosen_other_area=>ancient_forest",
-                    "chain": "area: ancient_forest_2"
+                    "vars": "chosen_second_area=>ancient_forest",
+                    "chain": "area: ancient_forest_3"
                 },
                 {
                     "name": "Cynet Universe",
                     "desc": "This area is full of Cyberse Monsters!\n\nFeatured Archetypes: Code Talker, Cyberse",
                     "img": "cynet_universe.webp",
-                    "vars": "chosen_other_area=>cynet_universe",
-                    "chain": "area: cynet_universe_2"
+                    "vars": "chosen_second_area=>cynet_universe",
+                    "chain": "area: cynet_universe_3"
                 },
                 {
                     "name": "The Dark World",
                     "desc": "This area is full of Fiend Monsters!\n\nFeatured Archetypes: Malicevorous, Resonator, Dark World",
                     "img": "dark_world.webp",
-                    "vars": "chosen_other_area=>dark_world",
-                    "chain": "area: dark_world_2"
+                    "vars": "chosen_second_area=>dark_world",
+                    "chain": "area: dark_world_3"
                 },
                 {
                     "name": "The Most Distant, Deepest Depths",
                     "desc": "This area is full of Fish Monsters!\n\nFeatured Archetypes: Nimble, Ghoti, Deep Sea",
                     "img": "deepest_depths.webp",
-                    "vars": "chosen_other_area=>deepest_depths",
-                    "chain": "area: deepest_depths_2"
+                    "vars": "chosen_second_area=>deepest_depths",
+                    "chain": "area: deepest_depths_3"
                 },
                 {
                     "name": "World Armor",
                     "desc": "This area is full of Insect Monsters!\n\nFeatured Archetypes: Krawler, Ninja",
                     "img": "world_armor.webp",
-                    "vars": "chosen_other_area=>world_armor",
-                    "chain": "area: world_armor_2"
+                    "vars": "chosen_second_area=>world_armor",
+                    "chain": "area: world_armor_3"
                 },
                 {
                     "name": "Geartown",
                     "desc": "This area is full of Machine Monsters!\n\nFeatured Archetypes: Crystron, Ancient Gear, Synchron",
                     "img": "geartown.webp",
-                    "vars": "chosen_other_area=>geartown",
-                    "chain": "area: geartown_2"
+                    "vars": "chosen_second_area=>geartown",
+                    "chain": "area: geartown_3"
                 },
                 {
                     "name": "World Tree",
                     "desc": "This area is full of Plant Monsters!\n\nFeatured Archetypes: Predaplant, Naturia, Aroma",
                     "img": "world_tree.webp",
-                    "vars": "chosen_other_area=>world_tree",
-                    "chain": "area: world_tree_2"
+                    "vars": "chosen_second_area=>world_tree",
+                    "chain": "area: world_tree_3"
                 },
                 {
                     "name": "Psychic Feel Zone",
                     "desc": "This area is full of Psychic Monsters!\n\nFeatured Archetypes: Psy-Frame, Psychic",
                     "img": "psychic_feel_zone.webp",
-                    "vars": "chosen_other_area=>psychic_feel_zone",
-                    "chain": "area: psychic_feel_zone_2"
+                    "vars": "chosen_second_area=>psychic_feel_zone",
+                    "chain": "area: psychic_feel_zone_3"
                 },
                 {
                     "name": "Venom Swamp",
                     "desc": "This area is full of Reptile Monsters!\n\nFeatured Archetypes: Reptilianne, Alien",
                     "img": "venom_swamp.webp",
-                    "vars": "chosen_other_area=>venom_swamp",
-                    "chain": "area: venom_swamp_2"
+                    "vars": "chosen_second_area=>venom_swamp",
+                    "chain": "area: venom_swamp_3"
                 }
             ]
         }
@@ -3326,74 +4176,109 @@
                 "loop=1": "bans: before_dupe"
             }
         ],
-        "archetypal_maindeck_pick": [
+        "archetypal_first_maindeck_pick": [
             {
-                "chosen_area=wetlands": "pick: AQUA_MD_PACK"
+                "chosen_first_area=wetlands": "pick: AQUA_MD_PACK"
             },
             {
-                "chosen_area=ancient_forest": "pick: BEAST_MD_PACK"
+                "chosen_first_area=ancient_forest": "pick: BEAST_MD_PACK"
             },
             {
-                "chosen_area=cynet_universe": "pick: CYBERSE_MD_PACK"
+                "chosen_first_area=cynet_universe": "pick: CYBERSE_MD_PACK"
             },
             {
-                "chosen_area=dark_world": "pick: FIEND_MD_PACK"
+                "chosen_first_area=dark_world": "pick: FIEND_MD_PACK"
             },
             {
-                "chosen_area=deepest_depths": "pick: FISH_MD_PACK"
+                "chosen_first_area=deepest_depths": "pick: FISH_MD_PACK"
             },
             {
-                "chosen_area=world_armor": "pick: INSECT_MD_PACK"
+                "chosen_first_area=world_armor": "pick: INSECT_MD_PACK"
             },
             {
-                "chosen_area=geartown": "pick: MACHINE_MD_PACK"
+                "chosen_first_area=geartown": "pick: MACHINE_MD_PACK"
             },
             {
-                "chosen_area=world_tree": "pick: PLANT_MD_PACK"
+                "chosen_first_area=world_tree": "pick: PLANT_MD_PACK"
             },
             {
-                "chosen_area=psychic_feel_zone": "pick: PSYCHIC_MD_PACK"
+                "chosen_first_area=psychic_feel_zone": "pick: PSYCHIC_MD_PACK"
             },
             {
-                "chosen_area=venom_swamp": "pick: REPTILE_MD_PACK"
+                "chosen_first_area=venom_swamp": "pick: REPTILE_MD_PACK"
             },
             {
-                "chosen_area=grand_spellbook_tower": "pick: SPELLCASTER_MD_PACK"
+                "chosen_first_area=grand_spellbook_tower": "pick: SPELLCASTER_MD_PACK"
             }
         ],
-        "archetypal_extradeck_pick": [
+        "archetypal_first_extradeck_pick": [
             {
-                "chosen_area=wetlands": "pick: AQUA_ED_PACK"
+                "chosen_first_area=wetlands": "pick: AQUA_ED_PACK"
             },
             {
-                "chosen_area=ancient_forest": "pick: BEAST_ED_PACK"
+                "chosen_first_area=ancient_forest": "pick: BEAST_ED_PACK"
             },
             {
-                "chosen_area=cynet_universe": "pick: CYBERSE_ED_PACK"
+                "chosen_first_area=cynet_universe": "pick: CYBERSE_ED_PACK"
             },
             {
-                "chosen_area=dark_world": "pick: FIEND_ED_PACK"
+                "chosen_first_area=dark_world": "pick: FIEND_ED_PACK"
             },
             {
-                "chosen_area=deepest_depths": "pick: FISH_ED_PACK"
+                "chosen_first_area=deepest_depths": "pick: FISH_ED_PACK"
             },
             {
-                "chosen_area=world_armor": "pick: INSECT_ED_PACK"
+                "chosen_first_area=world_armor": "pick: INSECT_ED_PACK"
             },
             {
-                "chosen_area=geartown": "pick: MACHINE_ED_PACK"
+                "chosen_first_area=geartown": "pick: MACHINE_ED_PACK"
             },
             {
-                "chosen_area=world_tree": "pick: PLANT_ED_PACK"
+                "chosen_first_area=world_tree": "pick: PLANT_ED_PACK"
             },
             {
-                "chosen_area=psychic_feel_zone": "pick: PSYCHIC_ED_PACK"
+                "chosen_first_area=psychic_feel_zone": "pick: PSYCHIC_ED_PACK"
             },
             {
-                "chosen_area=venom_swamp": "pick: REPTILE_ED_PACK"
+                "chosen_first_area=venom_swamp": "pick: REPTILE_ED_PACK"
             },
             {
-                "chosen_area=grand_spellbook_tower": "pick: SPELLCASTER_ED_PACK"
+                "chosen_first_area=grand_spellbook_tower": "pick: SPELLCASTER_ED_PACK"
+            }
+        ],
+        "archetypal_first_power_pick": [
+            {
+                "chosen_first_area=wetlands": "pick: AQUA_POWER_PACK"
+            },
+            {
+                "chosen_first_area=ancient_forest": "pick: BEAST_POWER_PACK"
+            },
+            {
+                "chosen_first_area=cynet_universe": "pick: CYBERSE_POWER_PACK"
+            },
+            {
+                "chosen_first_area=dark_world": "pick: FIEND_POWER_PACK"
+            },
+            {
+                "chosen_first_area=deepest_depths": "pick: FISH_POWER_PACK"
+            },
+            {
+                "chosen_first_area=world_armor": "pick: INSECT_POWER_PACK"
+            },
+            {
+                "chosen_first_area=geartown": "pick: MACHINE_POWER_PACK"
+            },
+            {
+                "chosen_first_area=world_tree": "pick: PLANT_POWER_PACK"
+            },
+            {
+                "chosen_first_area=psychic_feel_zone": "pick: PSYCHIC_POWER_PACK"
+            },
+            {
+                "chosen_first_area=venom_swamp": "pick: REPTILE_POWER_PACK"
+            },
+            {
+                "chosen_first_area=grand_spellbook_tower": "pick: SPELLCASTER_POWER_PACK"
             }
         ],
         "wetlands_chain_to_ed": [
@@ -3532,7 +4417,11 @@
         },
         "AQUA_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "AQUA_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "BEAST_MD_PACK": {
             "micon": "pack.webp",
@@ -3540,7 +4429,11 @@
         },
         "BEAST_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "BEAST_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "CYBERSE_MD_PACK": {
             "micon": "pack.webp",
@@ -3548,7 +4441,11 @@
         },
         "CYBERSE_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "CYBERSE_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "FIEND_MD_PACK": {
             "micon": "pack.webp",
@@ -3556,7 +4453,11 @@
         },
         "FIEND_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "FIEND_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "FISH_MD_PACK": {
             "micon": "pack.webp",
@@ -3564,7 +4465,11 @@
         },
         "FISH_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "FISH_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "INSECT_MD_PACK": {
             "micon": "pack.webp",
@@ -3572,7 +4477,11 @@
         },
         "INSECT_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "INSECT_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "MACHINE_MD_PACK": {
             "micon": "pack.webp",
@@ -3580,7 +4489,11 @@
         },
         "MACHINE_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "MACHINE_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "PLANT_MD_PACK": {
             "micon": "pack.webp",
@@ -3588,7 +4501,11 @@
         },
         "PLANT_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "PLANT_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "PSYCHIC_MD_PACK": {
             "micon": "pack.webp",
@@ -3596,7 +4513,11 @@
         },
         "PSYCHIC_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "PSYCHIC_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "REPTILE_MD_PACK": {
             "micon": "pack.webp",
@@ -3604,7 +4525,11 @@
         },
         "REPTILE_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "REPTILE_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         },
         "SPELLCASTER_MD_PACK": {
             "micon": "pack.webp",
@@ -3612,7 +4537,11 @@
         },
         "SPELLCASTER_ED_PACK": {
             "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Extra Deck Cards"
+            "mdesc": "Pick an Archetypal Extra Deck Card"
+        },
+        "SPELLCASTER_POWER_PACK": {
+            "micon": "pack.webp",
+            "mdesc": "Maximizing the Power Level"
         }
     },
     "swap": {
@@ -3735,6 +4664,30 @@
             "lives": 1,
             "wins": "text: duel_1_win",
             "lose": "text: duel_1_lose"
+        },
+        "duel_2": {
+            "image": "endless_engine_argyro_system.webp",
+            "dbimg": "therion_empress_alasia_avatar.webp",
+            "title": "Therion Empress Alasia",
+            "lives": 1,
+            "wins": "text: duel_2_win",
+            "lose": "text: duel_2_lose"
+        },
+        "duel_3": {
+            "image": "endless_engine_argyro_system.webp",
+            "dbimg": "therion_empress_alasia_avatar.webp",
+            "title": "Therion Empress Alasia",
+            "lives": 1,
+            "wins": "text: duel_3_win",
+            "lose": "text: duel_3_lose"
+        },
+        "duel_4": {
+            "image": "endless_engine_argyro_system.webp",
+            "dbimg": "therion_empress_alasia_avatar.webp",
+            "title": "Therion Empress Alasia",
+            "lives": 1,
+            "wins": "text: duel_4_win",
+            "lose": "text: duel_4_lose"
         }
     },
     "vars": {}
