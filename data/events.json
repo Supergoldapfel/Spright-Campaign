@@ -40,7 +40,8 @@
                 [
                     "area: wetlands_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "wetlands_1": {
             "image": "wetlands.webp",
@@ -64,7 +65,8 @@
                 [
                     "area: wetlands_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "wetlands_2": {
             "image": "wetlands.webp",
@@ -84,7 +86,8 @@
                 [
                     "text: wetlands_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "wetlands_3": {
             "image": "wetlands.webp",
@@ -111,7 +114,8 @@
                 [
                     "area: wetlands_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "wetlands_4": {
             "image": "wetlands.webp",
@@ -133,7 +137,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "ancient_forest_0": {
             "image": "ancient_forest.webp",
@@ -161,7 +166,8 @@
                 [
                     "area: ancient_forest_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "ancient_forest_1": {
             "image": "ancient_forest.webp",
@@ -185,7 +191,8 @@
                 [
                     "area: ancient_forest_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "ancient_forest_2": {
             "image": "ancient_forest.webp",
@@ -205,7 +212,8 @@
                 [
                     "text: ancient_forest_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "ancient_forest_3": {
             "image": "ancient_forest.webp",
@@ -232,7 +240,8 @@
                 [
                     "area: ancient_forest_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "ancient_forest_4": {
             "image": "ancient_forest.webp",
@@ -254,7 +263,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "cynet_universe_0": {
             "image": "cynet_universe.webp",
@@ -282,7 +292,8 @@
                 [
                     "area: cynet_universe_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "cynet_universe_1": {
             "image": "cynet_universe.webp",
@@ -306,7 +317,8 @@
                 [
                     "area: cynet_universe_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "cynet_universe_2": {
             "image": "cynet_universe.webp",
@@ -326,7 +338,8 @@
                 [
                     "text: cynet_universe_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "cynet_universe_3": {
             "image": "cynet_universe.webp",
@@ -353,7 +366,8 @@
                 [
                     "area: cynet_universe_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "cynet_universe_4": {
             "image": "cynet_universe.webp",
@@ -375,7 +389,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "dark_world_0": {
             "image": "dark_world.webp",
@@ -403,7 +418,8 @@
                 [
                     "area: dark_world_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "dark_world_1": {
             "image": "dark_world.webp",
@@ -427,7 +443,8 @@
                 [
                     "area: dark_world_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "dark_world_2": {
             "image": "dark_world.webp",
@@ -447,7 +464,8 @@
                 [
                     "text: dark_world_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "dark_world_3": {
             "image": "dark_world.webp",
@@ -474,7 +492,8 @@
                 [
                     "area: dark_world_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "dark_world_4": {
             "image": "dark_world.webp",
@@ -496,7 +515,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "deepest_depths_0": {
             "image": "deepest_depths.webp",
@@ -524,7 +544,8 @@
                 [
                     "area: deepest_depths_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "deepest_depths_1": {
             "image": "deepest_depths.webp",
@@ -548,7 +569,8 @@
                 [
                     "area: deepest_depths_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "deepest_depths_2": {
             "image": "deepest_depths.webp",
@@ -568,7 +590,8 @@
                 [
                     "text: deepest_depths_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "deepest_depths_3": {
             "image": "deepest_depths.webp",
@@ -595,7 +618,8 @@
                 [
                     "area: deepest_depths_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "deepest_depths_4": {
             "image": "deepest_depths.webp",
@@ -617,7 +641,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "world_armor_0": {
             "image": "world_armor.webp",
@@ -645,7 +670,8 @@
                 [
                     "area: world_armor_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "world_armor_1": {
             "image": "world_armor.webp",
@@ -669,7 +695,8 @@
                 [
                     "area: world_armor_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "world_armor_2": {
             "image": "world_armor.webp",
@@ -689,7 +716,8 @@
                 [
                     "text: world_armor_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "world_armor_3": {
             "image": "world_armor.webp",
@@ -716,7 +744,8 @@
                 [
                     "area: world_armor_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "world_armor_4": {
             "image": "world_armor.webp",
@@ -738,7 +767,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "geartown_0": {
             "image": "geartown.webp",
@@ -766,7 +796,8 @@
                 [
                     "area: geartown_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "geartown_1": {
             "image": "geartown.webp",
@@ -790,7 +821,8 @@
                 [
                     "area: geartown_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "geartown_2": {
             "image": "geartown.webp",
@@ -810,7 +842,8 @@
                 [
                     "text: geartown_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "geartown_3": {
             "image": "geartown.webp",
@@ -837,7 +870,8 @@
                 [
                     "area: geartown_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "geartown_4": {
             "image": "geartown.webp",
@@ -859,7 +893,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "world_tree_0": {
             "image": "world_tree.webp",
@@ -887,7 +922,8 @@
                 [
                     "area: world_tree_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "world_tree_1": {
             "image": "world_tree.webp",
@@ -911,7 +947,8 @@
                 [
                     "area: world_tree_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "world_tree_2": {
             "image": "world_tree.webp",
@@ -931,7 +968,8 @@
                 [
                     "text: world_tree_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "world_tree_3": {
             "image": "world_tree.webp",
@@ -958,7 +996,8 @@
                 [
                     "area: world_tree_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "world_tree_4": {
             "image": "world_tree.webp",
@@ -980,7 +1019,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "psychic_feel_zone_0": {
             "image": "psychic_feel_zone.webp",
@@ -1008,7 +1048,8 @@
                 [
                     "area: psychic_feel_zone_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "psychic_feel_zone_1": {
             "image": "psychic_feel_zone.webp",
@@ -1032,7 +1073,8 @@
                 [
                     "area: psychic_feel_zone_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "psychic_feel_zone_2": {
             "image": "psychic_feel_zone.webp",
@@ -1052,7 +1094,8 @@
                 [
                     "text: psychic_feel_zone_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "psychic_feel_zone_3": {
             "image": "psychic_feel_zone.webp",
@@ -1079,7 +1122,8 @@
                 [
                     "area: psychic_feel_zone_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "psychic_feel_zone_4": {
             "image": "psychic_feel_zone.webp",
@@ -1101,7 +1145,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "venom_swamp_0": {
             "image": "venom_swamp.webp",
@@ -1129,7 +1174,8 @@
                 [
                     "area: venom_swamp_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "venom_swamp_1": {
             "image": "venom_swamp.webp",
@@ -1153,7 +1199,8 @@
                 [
                     "area: venom_swamp_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "venom_swamp_2": {
             "image": "venom_swamp.webp",
@@ -1173,7 +1220,8 @@
                 [
                     "text: venom_swamp_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "venom_swamp_3": {
             "image": "venom_swamp.webp",
@@ -1200,7 +1248,8 @@
                 [
                     "area: venom_swamp_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "venom_swamp_4": {
             "image": "venom_swamp.webp",
@@ -1222,7 +1271,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         },
         "grand_spellbook_tower_0": {
             "image": "grand_spellbook_tower.webp",
@@ -1250,7 +1300,8 @@
                 [
                     "area: grand_spellbook_tower_1"
                 ]
-            ]
+            ],
+            "vars": "stage=>0"
         },
         "grand_spellbook_tower_1": {
             "image": "grand_spellbook_tower.webp",
@@ -1274,7 +1325,8 @@
                 [
                     "area: grand_spellbook_tower_2"
                 ]
-            ]
+            ],
+            "vars": "stage=>1"
         },
         "grand_spellbook_tower_2": {
             "image": "grand_spellbook_tower.webp",
@@ -1294,7 +1346,8 @@
                 [
                     "text: grand_spellbook_tower_select_path"
                 ]
-            ]
+            ],
+            "vars": "stage=>2"
         },
         "grand_spellbook_tower_3": {
             "image": "grand_spellbook_tower.webp",
@@ -1321,7 +1374,8 @@
                 [
                     "area: grand_spellbook_tower_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>3"
         },
         "grand_spellbook_tower_4": {
             "image": "grand_spellbook_tower.webp",
@@ -1343,7 +1397,8 @@
                 [
                     "text: duel_4"
                 ]
-            ]
+            ],
+            "vars": "stage=>4"
         }
     },
     "text": {
@@ -2958,8 +3013,8 @@
             "chain": "choice: duel_lose"
         },
         "duel_2": {
-            "micon": "therion_irregular.webp",
-            "mdesc": "The Irregular",
+            "micon": "therion_empress_alasia.webp",
+            "mdesc": "The Empress",
             "image": "endless_engine_argyro_system.webp",
             "parts": [
                 {
@@ -3002,7 +3057,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "That thing is way stronger than that other guy! We got lucky and escpaed without any major injuries..."
+                    "content": "That empress is way stronger than that other guy! We got lucky and escpaed without any major injuries..."
                 },
                 {
                     "type": "bust",
@@ -3032,7 +3087,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "That thing is way stronger than that other guy! I don't know if we'd survive another battle..."
+                    "content": "That empress is way stronger than that other guy! I don't know if we'd survive another battle..."
                 },
                 {
                     "type": "bust",
@@ -3050,8 +3105,8 @@
             "chain": "choice: duel_lose"
         },
         "duel_3": {
-            "micon": "therion_irregular.webp",
-            "mdesc": "The Irregular",
+            "micon": "therion_empress_alasia.webp",
+            "mdesc": "The Empress",
             "image": "endless_engine_argyro_system.webp",
             "parts": [
                 {
@@ -3064,7 +3119,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "You still haven't given up? This is gonna be your demise!"
+                    "content": "Do you think you can run away from me? After the failed experiment of \"The Irregular\" I have no use left for Sprights, so you must die!"
                 },
                 {
                     "type": "bust",
@@ -3076,7 +3131,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "You underestimate the power of Level 2!"
+                    "content": "You don't know who you're fighting!"
                 }
             ],
             "chain": "duel: duel_3"
@@ -3142,8 +3197,8 @@
             "chain": "choice: duel_lose"
         },
         "duel_4": {
-            "micon": "therion_irregular.webp",
-            "mdesc": "The Irregular",
+            "micon": "therion_empress_alasia.webp",
+            "mdesc": "The Empress",
             "image": "endless_engine_argyro_system.webp",
             "parts": [
                 {
@@ -3283,15 +3338,15 @@
             "list": [
                 {
                     "name": "Archetypal Main Deck Cards",
-                    "desc": "Get more Main Deck cards from your chosen area's pack",
+                    "desc": "Get more Main Deck cards from your area's pack",
                     "img": "archetypal_maindeck_pack.webp",
-                    "chain": "fork: archetypal_first_maindeck_pick"
+                    "chain": "fork: archetypal_current_maindeck_pick"
                 },
                 {
                     "name": "Archetypal Extra Deck Card",
-                    "desc": "Get an Extra Deck card from your chosen area's pack",
+                    "desc": "Get an Extra Deck card from your area's pack",
                     "img": "archetypal_extradeck_pack.webp",
-                    "chain": "fork: archetypal_first_extradeck_pick"
+                    "chain": "fork: archetypal_current_extradeck_pick"
                 },
                 {
                     "name": "Generic Spell/Trap Cards",
@@ -4281,6 +4336,110 @@
                 "chosen_first_area=grand_spellbook_tower": "pick: SPELLCASTER_POWER_PACK"
             }
         ],
+        "archetypal_second_maindeck_pick": [
+            {
+                "chosen_second_area=wetlands": "pick: AQUA_MD_PACK"
+            },
+            {
+                "chosen_second_area=ancient_forest": "pick: BEAST_MD_PACK"
+            },
+            {
+                "chosen_second_area=cynet_universe": "pick: CYBERSE_MD_PACK"
+            },
+            {
+                "chosen_second_area=dark_world": "pick: FIEND_MD_PACK"
+            },
+            {
+                "chosen_second_area=deepest_depths": "pick: FISH_MD_PACK"
+            },
+            {
+                "chosen_second_area=world_armor": "pick: INSECT_MD_PACK"
+            },
+            {
+                "chosen_second_area=geartown": "pick: MACHINE_MD_PACK"
+            },
+            {
+                "chosen_second_area=world_tree": "pick: PLANT_MD_PACK"
+            },
+            {
+                "chosen_second_area=psychic_feel_zone": "pick: PSYCHIC_MD_PACK"
+            },
+            {
+                "chosen_second_area=venom_swamp": "pick: REPTILE_MD_PACK"
+            },
+            {
+                "chosen_second_area=grand_spellbook_tower": "pick: SPELLCASTER_MD_PACK"
+            }
+        ],
+        "archetypal_second_extradeck_pick": [
+            {
+                "chosen_second_area=wetlands": "pick: AQUA_ED_PACK"
+            },
+            {
+                "chosen_second_area=ancient_forest": "pick: BEAST_ED_PACK"
+            },
+            {
+                "chosen_second_area=cynet_universe": "pick: CYBERSE_ED_PACK"
+            },
+            {
+                "chosen_second_area=dark_world": "pick: FIEND_ED_PACK"
+            },
+            {
+                "chosen_second_area=deepest_depths": "pick: FISH_ED_PACK"
+            },
+            {
+                "chosen_second_area=world_armor": "pick: INSECT_ED_PACK"
+            },
+            {
+                "chosen_second_area=geartown": "pick: MACHINE_ED_PACK"
+            },
+            {
+                "chosen_second_area=world_tree": "pick: PLANT_ED_PACK"
+            },
+            {
+                "chosen_second_area=psychic_feel_zone": "pick: PSYCHIC_ED_PACK"
+            },
+            {
+                "chosen_second_area=venom_swamp": "pick: REPTILE_ED_PACK"
+            },
+            {
+                "chosen_second_area=grand_spellbook_tower": "pick: SPELLCASTER_ED_PACK"
+            }
+        ],
+        "archetypal_current_maindeck_pick": [
+            {
+                "stage=0": "fork: archetypal_first_maindeck_pick"
+            },
+            {
+                "stage=1": "fork: archetypal_first_maindeck_pick"
+            },
+            {
+                "stage=2": "fork: archetypal_first_maindeck_pick"
+            },
+            {
+                "stage=3": "fork: archetypal_second_maindeck_pick"
+            },
+            {
+                "stage=4": "fork: archetypal_second_maindeck_pick"
+            }
+        ],
+        "archetypal_current_extradeck_pick": [
+            {
+                "stage=0": "fork: archetypal_first_extradeck_pick"
+            },
+            {
+                "stage=1": "fork: archetypal_first_extradeck_pick"
+            },
+            {
+                "stage=2": "fork: archetypal_first_extradeck_pick"
+            },
+            {
+                "stage=3": "fork: archetypal_second_extradeck_pick"
+            },
+            {
+                "stage=4": "fork: archetypal_second_extradeck_pick"
+            }
+        ],
         "wetlands_chain_to_ed": [
             {
                 "chain_to_ed=true": "pack: AQUA_ED_PACK"
@@ -4690,5 +4849,15 @@
             "lose": "text: duel_4_lose"
         }
     },
-    "vars": {}
+    "vars": {},
+    "ends": {
+        "win": {
+            "image": "endless_engine_argyro_system.webp",
+            "title": "The Sprights continue their path, exploring the worlds that lie ahead of them!"
+        },
+        "lose": {
+            "image": "endless_engine_argyro_system.webp",
+            "title": "The Empress was simply too strong. On a different day, the Sprights might have won that decisive duel, but their energy will soon completely fade away..."
+        }
+    }
 }

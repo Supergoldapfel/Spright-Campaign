@@ -194,7 +194,7 @@ dialogs = {
         "duel_2_win": [
             (
                 "fallen_of_argyros",
-                "That thing is way stronger than that other guy! We got lucky and escpaed without any major injuries...",
+                "That empress is way stronger than that other guy! We got lucky and escpaed without any major injuries...",
             ),
             (
                 "spright_pixies",
@@ -204,7 +204,7 @@ dialogs = {
         "duel_2_lose": [
             (
                 "fallen_of_argyros",
-                "That thing is way stronger than that other guy! I don't know if we'd survive another battle...",
+                "That empress is way stronger than that other guy! I don't know if we'd survive another battle...",
             ),
             (
                 "spright_pixies",
@@ -212,8 +212,8 @@ dialogs = {
             ),
         ],
         "duel_3": [
-            ("therion_empress_alasia", "You still haven't given up? This is gonna be your demise!"),
-            ("fallen_of_argyros", "You underestimate the power of Level 2!"),
+            ("therion_empress_alasia", "Do you think you can run away from me? After the failed experiment of \"The Irregular\" I have no use left for Sprights, so you must die!"),
+            ("fallen_of_argyros", "You don't know who you're fighting!"),
         ],
         "duel_3_win": [
             (
@@ -546,13 +546,7 @@ dialogs = {
         ]
     },
 }
-# TODOs before playable:
-# TODO: change duel micon and mdesc for empress fights
-# TODO: Rename lose prize from chosen area to current, also replace chaining to correct curent, not first area (idea: loser can also pick old instead of current archetypal pack)
-# TODO: Empress bust pic
-# TODO: choice to skip text at the beginning of campaign
-# TODO: final win/lose screen
-# TODO: Remove redundant?
+# TODO: Remove redundant? (pack, pick; like with dupe where it works idk)
 
 def area_stages(area):
     return [
@@ -616,6 +610,7 @@ def transformToName(val, special={}):
 
 
 type_dict = dict(zip(areas, types))
+stage_count = len(area_stages("wetlands"))
 # endregion
 
 
@@ -638,6 +633,7 @@ for area in areas:
             "micon": "area.webp",
             "mdesc": "Continue",
             "mdata": stages[i],
+            "vars": f"stage=>{i}"
         }
 # endregion
 
@@ -718,8 +714,8 @@ def getAreaTextObjects(area):
 def getDuelTextObjects(num):
     objs = {
         num: {
-            "micon": "therion_irregular.webp",
-            "mdesc": "The Irregular",
+            "micon": f"{'therion_irregular' if i <= 1 else 'therion_empress_alasia'}.webp",
+            "mdesc": f"{'The Irregular' if i <= 1 else 'The Empress'}",
             "image": "endless_engine_argyro_system.webp",
             "parts": dialogToParts(dialogs["duel"][f"duel_{num}"]),
             "chain": f"duel: duel_{num}",
@@ -745,10 +741,9 @@ for key, val in dialogs["beginning"].items():
 for area in areas:
     for key, val in getAreaTextObjects(area).items():
         text_objects[f"{area}_{key}"] = val
-for i in range(len(dialogs["duel"])):
-    if f"duel_{i}" in dialogs["duel"].keys():
-        for key, val in getDuelTextObjects(i).items():
-            text_objects[f"duel_{key}"] = val
+for i in range(stage_count):
+    for key, val in getDuelTextObjects(i).items():
+        text_objects[f"duel_{key}"] = val
 text_objects["old_maindeck_pick"] = {
             "micon": "pack.webp",  # TODO: more custom event icons
             "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
@@ -792,15 +787,15 @@ choice_objects = {
         "list": [
             {
                 "name": "Archetypal Main Deck Cards",
-                "desc": "Get more Main Deck cards from your chosen area's pack",
+                "desc": "Get more Main Deck cards from your area's pack",
                 "img": "archetypal_maindeck_pack.webp",
-                "chain": "fork: archetypal_first_maindeck_pick",
+                "chain": "fork: archetypal_current_maindeck_pick",
             },
             {
                 "name": "Archetypal Extra Deck Card",
-                "desc": "Get an Extra Deck card from your chosen area's pack",
+                "desc": "Get an Extra Deck card from your area's pack",
                 "img": "archetypal_extradeck_pack.webp",
-                "chain": "fork: archetypal_first_extradeck_pick",
+                "chain": "fork: archetypal_current_extradeck_pick",
             },
             {
                 "name": "Generic Spell/Trap Cards",
@@ -864,6 +859,30 @@ fork_objects = {
             f"chosen_first_area={area}": f"pick: {type_dict[area].upper()}_POWER_PACK"
         }
         for area in areas
+    ],
+    "archetypal_second_maindeck_pick": [
+        {
+            f"chosen_second_area={area}": f"pick: {type_dict[area].upper()}_MD_PACK"
+        }
+        for area in areas
+    ],
+    "archetypal_second_extradeck_pick": [
+        {
+            f"chosen_second_area={area}": f"pick: {type_dict[area].upper()}_ED_PACK"
+        }
+        for area in areas
+    ],
+    "archetypal_current_maindeck_pick": [
+        {
+            f"stage={stage}": "fork: archetypal_first_maindeck_pick" if stage <= 2 else "fork: archetypal_second_maindeck_pick"
+        }
+        for stage in range(stage_count)
+    ],
+    "archetypal_current_extradeck_pick": [
+        {
+            f"stage={stage}": "fork: archetypal_first_extradeck_pick" if stage <= 2 else "fork: archetypal_second_extradeck_pick"
+        }
+        for stage in range(stage_count)
     ]
 }
 for area in areas:
@@ -975,10 +994,9 @@ bans_objects = {
 
 # region duel_objects
 duel_objects = {}
-for i in range(len(dialogs["duel"])):
-    if f"duel_{i}" in dialogs["duel"].keys():
-        enemy = "therion_irregular" if i <= 1 else "therion_empress_alasia"
-        duel_objects[f"duel_{i}"] = {
+for i in range(stage_count):
+    enemy = "therion_irregular" if i <= 1 else "therion_empress_alasia"
+    duel_objects[f"duel_{i}"] = {
         "image": "endless_engine_argyro_system.webp",
         "dbimg": f"{enemy}_avatar.webp",
         "title": transformToName(enemy),
@@ -992,6 +1010,19 @@ for i in range(len(dialogs["duel"])):
 vars_objects = {}
 # endregion
 
+#region ends_objects
+ends_objects = {
+    "win": {
+        "image": "endless_engine_argyro_system.webp",
+        "title": "The Sprights continue their path, exploring the worlds that lie ahead of them!"
+    },
+    "lose": {
+        "image": "endless_engine_argyro_system.webp",
+        "title": "The Empress was simply too strong. On a different day, the Sprights might have won that decisive duel, but their energy will soon completely fade away..."
+    }
+}
+#endregion
+
 result = {
     "area": area_objects,
     "text": text_objects,
@@ -1004,6 +1035,7 @@ result = {
     "bans": bans_objects,
     "duel": duel_objects,
     "vars": vars_objects,
+    "ends": ends_objects,
 }
 
 
