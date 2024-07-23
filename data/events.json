@@ -4,6 +4,37 @@
             "image": "great_sand_sea_gold_golgonda.webp",
             "mdata": [
                 [
+                    "text: START_settings",
+                    "text: START_start_game"
+                ],
+                [
+                    "none"
+                ]
+            ]
+        },
+        "settings": {
+            "micon": "settings.webp",
+            "mdesc": "Settings",
+            "iconSize": 70,
+            "image": "great_sand_sea_gold_golgonda.webp",
+            "mdata": [
+                [
+                    "choice: game_mode_setting",
+                    "choice: dialog_setting",
+                    "area: beginning"
+                ],
+                [
+                    "none"
+                ]
+            ]
+        },
+        "beginning": {
+            "micon": "start_game.webp",
+            "mdesc": "Start Game",
+            "iconSize": 70,
+            "image": "great_sand_sea_gold_golgonda.webp",
+            "mdata": [
+                [
                     "text: start"
                 ],
                 [
@@ -3228,6 +3259,22 @@
             ],
             "chain": "duel: duel_4"
         },
+        "START_start_game": {
+            "micon": "start_game.webp",
+            "mdesc": "Start Game",
+            "iconSize": 70,
+            "parts": [],
+            "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
+            "chain": "area: beginning"
+        },
+        "START_settings": {
+            "micon": "settings.webp",
+            "mdesc": "Settings",
+            "iconSize": 70,
+            "parts": [],
+            "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
+            "chain": "area: settings"
+        },
         "old_maindeck_pick": {
             "micon": "pack.webp",
             "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
@@ -3248,6 +3295,50 @@
         }
     },
     "choice": {
+        "game_mode_setting": {
+            "micon": "area.webp",
+            "mdesc": "Game Mode",
+            "image": "great_sand_sea_gold_golgonda.webp",
+            "title": "How many duels do you want to play?\n\nDefault: Best of 5",
+            "list": [
+                {
+                    "name": "Best of 5",
+                    "desc": "Play up to 5 duels and potentially unlock a second archetype\n\nDefault: Best of 5",
+                    "img": "best_of_5.webp",
+                    "vars": "game_mode=>bo5",
+                    "chain": "area: settings"
+                },
+                {
+                    "name": "Best of 3",
+                    "desc": "Play up to 3 duels and play with only one archetype\n\nDefault: Best of 5",
+                    "img": "best_of_3.webp",
+                    "vars": "game_mode=>bo3",
+                    "chain": "area: settings"
+                }
+            ]
+        },
+        "dialog_setting": {
+            "micon": "dialog.webp",
+            "mdesc": "Dialog",
+            "image": "great_sand_sea_gold_golgonda.webp",
+            "title": "Change wether dialog should be enabled for the campaign\n\nDefault: Enabled",
+            "list": [
+                {
+                    "name": "Dialog Enabled",
+                    "desc": "Display dialog during the campaign\n\nDefault: Enabled",
+                    "img": "dialog.webp",
+                    "vars": "dialog=>true",
+                    "chain": "area: settings"
+                },
+                {
+                    "name": "Dialog Disabled",
+                    "desc": "Don't display dialog during the campaign\n\nDefault: Enabled",
+                    "img": "no_dialog.webp",
+                    "vars": "dialog=>false",
+                    "chain": "area: settings"
+                }
+            ]
+        },
         "select_path": {
             "micon": "area.webp",
             "image": "great_sand_sea_gold_golgonda.webp",
@@ -4214,21 +4305,12 @@
     "fork": {
         "loop_SPELL_TRAP_PACK": [
             {
-                "loop=3": "pick: SPELL_TRAP_PACK"
-            },
-            {
-                "loop=2": "pick: SPELL_TRAP_PACK"
-            },
-            {
-                "loop=1": "pick: SPELL_TRAP_PACK"
+                "loop>0": "pick: SPELL_TRAP_PACK"
             }
         ],
         "loop_dupe": [
             {
-                "loop=2": "bans: before_dupe"
-            },
-            {
-                "loop=1": "bans: before_dupe"
+                "loop>0": "bans: before_dupe"
             }
         ],
         "archetypal_first_maindeck_pick": [
@@ -4408,36 +4490,18 @@
         ],
         "archetypal_current_maindeck_pick": [
             {
-                "stage=0": "fork: archetypal_first_maindeck_pick"
+                "stage<=2": "fork: archetypal_first_maindeck_pick"
             },
             {
-                "stage=1": "fork: archetypal_first_maindeck_pick"
-            },
-            {
-                "stage=2": "fork: archetypal_first_maindeck_pick"
-            },
-            {
-                "stage=3": "fork: archetypal_second_maindeck_pick"
-            },
-            {
-                "stage=4": "fork: archetypal_second_maindeck_pick"
+                "stage>2": "fork: archetypal_second_maindeck_pick"
             }
         ],
         "archetypal_current_extradeck_pick": [
             {
-                "stage=0": "fork: archetypal_first_extradeck_pick"
+                "stage<=2": "fork: archetypal_first_extradeck_pick"
             },
             {
-                "stage=1": "fork: archetypal_first_extradeck_pick"
-            },
-            {
-                "stage=2": "fork: archetypal_first_extradeck_pick"
-            },
-            {
-                "stage=3": "fork: archetypal_second_extradeck_pick"
-            },
-            {
-                "stage=4": "fork: archetypal_second_extradeck_pick"
+                "stage>2": "fork: archetypal_second_extradeck_pick"
             }
         ],
         "wetlands_chain_to_ed": [

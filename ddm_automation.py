@@ -1,3 +1,7 @@
+# Credits for dc post:
+# Konami
+# TextStudio
+
 import json
 import pyperclip
 
@@ -546,7 +550,10 @@ dialogs = {
         ]
     },
 }
-# TODO: Remove redundant? (pack, pick; like with dupe where it works idk)
+# TODO: Remove redundant? (pack, pick; like with dupe where it works idk) -> issue with ddm
+# TODO: implement settings
+# TODO: end campaign based on wins/losses (duels cost 0 lives, manage lives and ends manually?)
+# TODO: change icon to argyros
 
 def area_stages(area):
     return [
@@ -617,6 +624,26 @@ stage_count = len(area_stages("wetlands"))
 # region area_objects
 area_objects = {
     "START": {
+        "image": "great_sand_sea_gold_golgonda.webp",
+        "mdata": [
+            ["text: START_settings", "text: START_start_game"],
+            ["none"]
+        ]
+    },
+    "settings": {
+        "micon": "settings.webp",
+        "mdesc": "Settings",
+        "iconSize": 70,
+        "image": "great_sand_sea_gold_golgonda.webp",
+        "mdata": [
+            ["choice: game_mode_setting", "choice: dialog_setting", "area: beginning"],
+            ["none"]
+        ]
+    },
+    "beginning": {
+        "micon": "start_game.webp",
+        "mdesc": "Start Game",
+        "iconSize": 70,
         "image": "great_sand_sea_gold_golgonda.webp",
         "mdata": [
             ["text: start"],
@@ -744,28 +771,88 @@ for area in areas:
 for i in range(stage_count):
     for key, val in getDuelTextObjects(i).items():
         text_objects[f"duel_{key}"] = val
+text_objects["START_start_game"] = {
+    "micon": "start_game.webp",
+    "mdesc": "Start Game",
+    "iconSize": 70,
+    "parts": [],
+    "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
+    "chain": "area: beginning",
+}
+text_objects["START_settings"] = {
+    "micon": "settings.webp",
+    "mdesc": "Settings",
+    "iconSize": 70,
+    "parts": [],
+    "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
+    "chain": "area: settings",
+}
 text_objects["old_maindeck_pick"] = {
-            "micon": "pack.webp",  # TODO: more custom event icons
-            "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
-            "parts": [],
-            "chain": f"fork: archetypal_first_maindeck_pick",
-        }
+    "micon": "pack.webp",  # TODO: more custom event icons
+    "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
+    "parts": [],
+    "chain": "fork: archetypal_first_maindeck_pick",
+}
 text_objects["old_extradeck_pick"] = {
-            "micon": "pack.webp",  # TODO: more custom event icons
-            "mdesc": "Pick an Archetypal Extra Deck Card of the previous area",
-            "parts": [],
-            "chain": f"fork: archetypal_first_extradeck_pick",
-        }
+    "micon": "pack.webp",  # TODO: more custom event icons
+    "mdesc": "Pick an Archetypal Extra Deck Card of the previous area",
+    "parts": [],
+    "chain": "fork: archetypal_first_extradeck_pick",
+}
 text_objects["old_power_pick"] = {
-            "micon": "pack.webp",  # TODO: more custom event icons
-            "mdesc": "Maximizing the Power Level of the previous area",
-            "parts": [],
-            "chain": f"fork: archetypal_first_power_pick",
-        }
+    "micon": "pack.webp",  # TODO: more custom event icons
+    "mdesc": "Maximizing the Power Level of the previous area",
+    "parts": [],
+    "chain": "fork: archetypal_first_power_pick",
+}
 # endregion
 
 # region choice_objects
 choice_objects = {
+    "game_mode_setting": {
+        "micon": "area.webp",
+        "mdesc": "Game Mode",
+        "image": "great_sand_sea_gold_golgonda.webp",
+        "title": "How many duels do you want to play?\n\nDefault: Best of 5",
+        "list": [
+            {
+                "name": "Best of 5",
+                "desc": "Play up to 5 duels and potentially unlock a second archetype\n\nDefault: Best of 5",
+                "img": "best_of_5.webp",
+                "vars": "game_mode=>bo5",
+                "chain": "area: settings"
+            },
+            {
+                "name": "Best of 3",
+                "desc": "Play up to 3 duels and play with only one archetype\n\nDefault: Best of 5",
+                "img": "best_of_3.webp",
+                "vars": "game_mode=>bo3",
+                "chain": "area: settings"
+            }
+        ],
+    },
+    "dialog_setting": {
+        "micon": "dialog.webp",
+        "mdesc": "Dialog",
+        "image": "great_sand_sea_gold_golgonda.webp",
+        "title": "Change wether dialog should be enabled for the campaign\n\nDefault: Enabled",
+        "list": [
+            {
+                "name": "Dialog Enabled",
+                "desc": "Display dialog during the campaign\n\nDefault: Enabled",
+                "img": "dialog.webp",
+                "vars": "dialog=>true",
+                "chain": "area: settings"
+            },
+            {
+                "name": "Dialog Disabled",
+                "desc": "Don't display dialog during the campaign\n\nDefault: Enabled",
+                "img": "no_dialog.webp",
+                "vars": "dialog=>false",
+                "chain": "area: settings"
+            }
+        ],
+    },
     "select_path": {
         "micon": "area.webp",
         "image": "great_sand_sea_gold_golgonda.webp",
@@ -834,13 +921,10 @@ for area in areas:
 # region fork_objects
 fork_objects = {
     "loop_SPELL_TRAP_PACK": [
-        {"loop=3": "pick: SPELL_TRAP_PACK"},
-        {"loop=2": "pick: SPELL_TRAP_PACK"},
-        {"loop=1": "pick: SPELL_TRAP_PACK"},
+        {"loop>0": "pick: SPELL_TRAP_PACK"}
     ],
     "loop_dupe": [
-        {"loop=2": "bans: before_dupe"},
-        {"loop=1": "bans: before_dupe"},
+        {"loop>0": "bans: before_dupe"}
     ],
     "archetypal_first_maindeck_pick": [
         {
@@ -874,15 +958,19 @@ fork_objects = {
     ],
     "archetypal_current_maindeck_pick": [
         {
-            f"stage={stage}": "fork: archetypal_first_maindeck_pick" if stage <= 2 else "fork: archetypal_second_maindeck_pick"
+            "stage<=2": "fork: archetypal_first_maindeck_pick"
+        },
+        {
+            "stage>2": "fork: archetypal_second_maindeck_pick"
         }
-        for stage in range(stage_count)
     ],
     "archetypal_current_extradeck_pick": [
         {
-            f"stage={stage}": "fork: archetypal_first_extradeck_pick" if stage <= 2 else "fork: archetypal_second_extradeck_pick"
+            "stage<=2": "fork: archetypal_first_extradeck_pick"
+        },
+        {
+            "stage>2": "fork: archetypal_second_extradeck_pick"
         }
-        for stage in range(stage_count)
     ]
 }
 for area in areas:
