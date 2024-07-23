@@ -550,8 +550,8 @@ dialogs = {
         ]
     },
 }
-# TODO: Remove redundant? (pack, pick; like with dupe where it works idk) -> issue with ddm
-# TODO: implement settings
+# Issue: Remove redundant? (pack, pick; like with dupe where it works idk) -> issue with ddm
+# TODO: implement game mode setting
 # TODO: end campaign based on wins/losses (duels cost 0 lives, manage lives and ends manually?)
 # TODO: change icon to argyros
 
@@ -819,14 +819,14 @@ choice_objects = {
                 "name": "Best of 5",
                 "desc": "Play up to 5 duels and potentially unlock a second archetype\n\nDefault: Best of 5",
                 "img": "best_of_5.webp",
-                "vars": "game_mode=>bo5",
+                "vars": "game_mode_setting=>bo5",
                 "chain": "area: settings"
             },
             {
                 "name": "Best of 3",
                 "desc": "Play up to 3 duels and play with only one archetype\n\nDefault: Best of 5",
                 "img": "best_of_3.webp",
-                "vars": "game_mode=>bo3",
+                "vars": "game_mode_setting=>bo3",
                 "chain": "area: settings"
             }
         ],
@@ -841,14 +841,14 @@ choice_objects = {
                 "name": "Dialog Enabled",
                 "desc": "Display dialog during the campaign\n\nDefault: Enabled",
                 "img": "dialog.webp",
-                "vars": "dialog=>true",
+                "vars": "dialog_setting=>true",
                 "chain": "area: settings"
             },
             {
                 "name": "Dialog Disabled",
                 "desc": "Don't display dialog during the campaign\n\nDefault: Enabled",
                 "img": "no_dialog.webp",
-                "vars": "dialog=>false",
+                "vars": "dialog_setting=>false",
                 "chain": "area: settings"
             }
         ],
@@ -1109,6 +1109,27 @@ ends_objects = {
         "title": "The Empress was simply too strong. On a different day, the Sprights might have won that decisive duel, but their energy will soon completely fade away..."
     }
 }
+#endregion
+
+#region dialog_setting
+# TODO: remove unnecessaryoptions from copied objects
+modified_text_objects = {}
+for text_key, text_val in text_objects.items():
+    new_object = text_val.copy()
+    modified_text_objects[f"{text_key}_text"] = new_object.copy()
+    
+    new_object["parts"] = []
+    modified_text_objects[f"{text_key}_no_text"] = new_object.copy()
+    
+    fork_objects[f"{text_key}_dialog_fork"] = [
+        {"dialog_setting=true": f"text: {text_key}_text"},
+        {"dialog_setting=false": f"text: {text_key}_no_text"}
+    ]
+    
+    new_object["chain"] = f"fork: {text_key}_dialog_fork"
+    modified_text_objects[text_key] = new_object
+    
+text_objects = modified_text_objects
 #endregion
 
 result = {
