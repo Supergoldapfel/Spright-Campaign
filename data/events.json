@@ -1458,13 +1458,15 @@
                     "type": "text",
                     "content": "I need to find them..."
                 }
-            ]
+            ],
+            "vars": "win_count=>0&&loss_count=>0"
         },
         "start_no_text": {
             "micon": "fallen_of_argyros_event.webp",
             "mdesc": "Start",
             "image": "great_sand_sea_gold_golgonda.webp",
-            "parts": []
+            "parts": [],
+            "vars": "win_count=>0&&loss_count=>0"
         },
         "start": {
             "micon": "fallen_of_argyros_event.webp",
@@ -1735,76 +1737,29 @@
             "mdesc": "Growing the party",
             "image": "wetlands.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: wetlands_pack_dialog_fork"
-        },
-        "wetlands_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "wetlands.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "wetlands_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "wetlands.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "wetlands_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "wetlands.webp",
             "parts": [],
-            "chain": "fork: wetlands_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "wetlands_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "wetlands.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "wetlands_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "wetlands.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "wetlands_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "wetlands.webp",
             "parts": [],
-            "chain": "fork: wetlands_special_dialog_fork"
-        },
-        "wetlands_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "wetlands.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "wetlands_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "wetlands.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "wetlands_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "wetlands.webp",
             "parts": [],
-            "chain": "fork: wetlands_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "wetlands_pack_1_text": {
@@ -1841,29 +1796,14 @@
             "mdesc": "Growing the party",
             "image": "wetlands.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: wetlands_pack_1_dialog_fork"
-        },
-        "wetlands_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "wetlands.webp",
-            "parts": [],
-            "chain": "choice: wetlands_select_path"
-        },
-        "wetlands_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "wetlands.webp",
-            "parts": [],
-            "chain": "choice: wetlands_select_path"
         },
         "wetlands_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "wetlands.webp",
             "parts": [],
-            "chain": "fork: wetlands_select_path_dialog_fork"
+            "chain": "choice: wetlands_select_path"
         },
         "ancient_forest_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -1957,76 +1897,29 @@
             "mdesc": "Growing the party",
             "image": "ancient_forest.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: ancient_forest_pack_dialog_fork"
-        },
-        "ancient_forest_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "ancient_forest.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "ancient_forest_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "ancient_forest.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "ancient_forest_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "ancient_forest.webp",
             "parts": [],
-            "chain": "fork: ancient_forest_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "ancient_forest_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "ancient_forest.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "ancient_forest_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "ancient_forest.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "ancient_forest_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "ancient_forest.webp",
             "parts": [],
-            "chain": "fork: ancient_forest_special_dialog_fork"
-        },
-        "ancient_forest_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "ancient_forest.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "ancient_forest_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "ancient_forest.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "ancient_forest_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "ancient_forest.webp",
             "parts": [],
-            "chain": "fork: ancient_forest_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "ancient_forest_pack_1_text": {
@@ -2063,29 +1956,14 @@
             "mdesc": "Growing the party",
             "image": "ancient_forest.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: ancient_forest_pack_1_dialog_fork"
-        },
-        "ancient_forest_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "ancient_forest.webp",
-            "parts": [],
-            "chain": "choice: ancient_forest_select_path"
-        },
-        "ancient_forest_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "ancient_forest.webp",
-            "parts": [],
-            "chain": "choice: ancient_forest_select_path"
         },
         "ancient_forest_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "ancient_forest.webp",
             "parts": [],
-            "chain": "fork: ancient_forest_select_path_dialog_fork"
+            "chain": "choice: ancient_forest_select_path"
         },
         "cynet_universe_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2179,76 +2057,29 @@
             "mdesc": "Growing the party",
             "image": "cynet_universe.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: cynet_universe_pack_dialog_fork"
-        },
-        "cynet_universe_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "cynet_universe.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "cynet_universe_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "cynet_universe.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "cynet_universe_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "cynet_universe.webp",
             "parts": [],
-            "chain": "fork: cynet_universe_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "cynet_universe_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "cynet_universe.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "cynet_universe_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "cynet_universe.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "cynet_universe_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "cynet_universe.webp",
             "parts": [],
-            "chain": "fork: cynet_universe_special_dialog_fork"
-        },
-        "cynet_universe_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "cynet_universe.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "cynet_universe_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "cynet_universe.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "cynet_universe_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "cynet_universe.webp",
             "parts": [],
-            "chain": "fork: cynet_universe_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "cynet_universe_pack_1_text": {
@@ -2285,29 +2116,14 @@
             "mdesc": "Growing the party",
             "image": "cynet_universe.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: cynet_universe_pack_1_dialog_fork"
-        },
-        "cynet_universe_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "cynet_universe.webp",
-            "parts": [],
-            "chain": "choice: cynet_universe_select_path"
-        },
-        "cynet_universe_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "cynet_universe.webp",
-            "parts": [],
-            "chain": "choice: cynet_universe_select_path"
         },
         "cynet_universe_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "cynet_universe.webp",
             "parts": [],
-            "chain": "fork: cynet_universe_select_path_dialog_fork"
+            "chain": "choice: cynet_universe_select_path"
         },
         "dark_world_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2401,76 +2217,29 @@
             "mdesc": "Growing the party",
             "image": "dark_world.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: dark_world_pack_dialog_fork"
-        },
-        "dark_world_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "dark_world.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "dark_world_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "dark_world.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "dark_world_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "dark_world.webp",
             "parts": [],
-            "chain": "fork: dark_world_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "dark_world_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "dark_world.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "dark_world_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "dark_world.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "dark_world_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "dark_world.webp",
             "parts": [],
-            "chain": "fork: dark_world_special_dialog_fork"
-        },
-        "dark_world_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "dark_world.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "dark_world_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "dark_world.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "dark_world_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "dark_world.webp",
             "parts": [],
-            "chain": "fork: dark_world_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "dark_world_pack_1_text": {
@@ -2507,29 +2276,14 @@
             "mdesc": "Growing the party",
             "image": "dark_world.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: dark_world_pack_1_dialog_fork"
-        },
-        "dark_world_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "dark_world.webp",
-            "parts": [],
-            "chain": "choice: dark_world_select_path"
-        },
-        "dark_world_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "dark_world.webp",
-            "parts": [],
-            "chain": "choice: dark_world_select_path"
         },
         "dark_world_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "dark_world.webp",
             "parts": [],
-            "chain": "fork: dark_world_select_path_dialog_fork"
+            "chain": "choice: dark_world_select_path"
         },
         "deepest_depths_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2623,76 +2377,29 @@
             "mdesc": "Growing the party",
             "image": "deepest_depths.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: deepest_depths_pack_dialog_fork"
-        },
-        "deepest_depths_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "deepest_depths.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "deepest_depths_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "deepest_depths.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "deepest_depths_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "deepest_depths.webp",
             "parts": [],
-            "chain": "fork: deepest_depths_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "deepest_depths_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "deepest_depths.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "deepest_depths_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "deepest_depths.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "deepest_depths_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "deepest_depths.webp",
             "parts": [],
-            "chain": "fork: deepest_depths_special_dialog_fork"
-        },
-        "deepest_depths_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "deepest_depths.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "deepest_depths_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "deepest_depths.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "deepest_depths_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "deepest_depths.webp",
             "parts": [],
-            "chain": "fork: deepest_depths_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "deepest_depths_pack_1_text": {
@@ -2729,29 +2436,14 @@
             "mdesc": "Growing the party",
             "image": "deepest_depths.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: deepest_depths_pack_1_dialog_fork"
-        },
-        "deepest_depths_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "deepest_depths.webp",
-            "parts": [],
-            "chain": "choice: deepest_depths_select_path"
-        },
-        "deepest_depths_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "deepest_depths.webp",
-            "parts": [],
-            "chain": "choice: deepest_depths_select_path"
         },
         "deepest_depths_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "deepest_depths.webp",
             "parts": [],
-            "chain": "fork: deepest_depths_select_path_dialog_fork"
+            "chain": "choice: deepest_depths_select_path"
         },
         "world_armor_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2845,76 +2537,29 @@
             "mdesc": "Growing the party",
             "image": "world_armor.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: world_armor_pack_dialog_fork"
-        },
-        "world_armor_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "world_armor.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "world_armor_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "world_armor.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "world_armor_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "world_armor.webp",
             "parts": [],
-            "chain": "fork: world_armor_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "world_armor_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "world_armor.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "world_armor_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "world_armor.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "world_armor_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "world_armor.webp",
             "parts": [],
-            "chain": "fork: world_armor_special_dialog_fork"
-        },
-        "world_armor_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "world_armor.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "world_armor_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "world_armor.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "world_armor_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "world_armor.webp",
             "parts": [],
-            "chain": "fork: world_armor_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "world_armor_pack_1_text": {
@@ -2951,29 +2596,14 @@
             "mdesc": "Growing the party",
             "image": "world_armor.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: world_armor_pack_1_dialog_fork"
-        },
-        "world_armor_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "world_armor.webp",
-            "parts": [],
-            "chain": "choice: world_armor_select_path"
-        },
-        "world_armor_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "world_armor.webp",
-            "parts": [],
-            "chain": "choice: world_armor_select_path"
         },
         "world_armor_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "world_armor.webp",
             "parts": [],
-            "chain": "fork: world_armor_select_path_dialog_fork"
+            "chain": "choice: world_armor_select_path"
         },
         "geartown_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -3067,76 +2697,29 @@
             "mdesc": "Growing the party",
             "image": "geartown.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: geartown_pack_dialog_fork"
-        },
-        "geartown_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "geartown.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "geartown_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "geartown.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "geartown_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "geartown.webp",
             "parts": [],
-            "chain": "fork: geartown_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "geartown_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "geartown.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "geartown_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "geartown.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "geartown_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "geartown.webp",
             "parts": [],
-            "chain": "fork: geartown_special_dialog_fork"
-        },
-        "geartown_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "geartown.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "geartown_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "geartown.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "geartown_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "geartown.webp",
             "parts": [],
-            "chain": "fork: geartown_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "geartown_pack_1_text": {
@@ -3173,29 +2756,14 @@
             "mdesc": "Growing the party",
             "image": "geartown.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: geartown_pack_1_dialog_fork"
-        },
-        "geartown_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "geartown.webp",
-            "parts": [],
-            "chain": "choice: geartown_select_path"
-        },
-        "geartown_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "geartown.webp",
-            "parts": [],
-            "chain": "choice: geartown_select_path"
         },
         "geartown_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "geartown.webp",
             "parts": [],
-            "chain": "fork: geartown_select_path_dialog_fork"
+            "chain": "choice: geartown_select_path"
         },
         "world_tree_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -3289,76 +2857,29 @@
             "mdesc": "Growing the party",
             "image": "world_tree.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: world_tree_pack_dialog_fork"
-        },
-        "world_tree_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "world_tree.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "world_tree_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "world_tree.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "world_tree_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "world_tree.webp",
             "parts": [],
-            "chain": "fork: world_tree_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "world_tree_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "world_tree.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "world_tree_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "world_tree.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "world_tree_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "world_tree.webp",
             "parts": [],
-            "chain": "fork: world_tree_special_dialog_fork"
-        },
-        "world_tree_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "world_tree.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "world_tree_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "world_tree.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "world_tree_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "world_tree.webp",
             "parts": [],
-            "chain": "fork: world_tree_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "world_tree_pack_1_text": {
@@ -3395,29 +2916,14 @@
             "mdesc": "Growing the party",
             "image": "world_tree.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: world_tree_pack_1_dialog_fork"
-        },
-        "world_tree_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "world_tree.webp",
-            "parts": [],
-            "chain": "choice: world_tree_select_path"
-        },
-        "world_tree_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "world_tree.webp",
-            "parts": [],
-            "chain": "choice: world_tree_select_path"
         },
         "world_tree_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "world_tree.webp",
             "parts": [],
-            "chain": "fork: world_tree_select_path_dialog_fork"
+            "chain": "choice: world_tree_select_path"
         },
         "psychic_feel_zone_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -3511,76 +3017,29 @@
             "mdesc": "Growing the party",
             "image": "psychic_feel_zone.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: psychic_feel_zone_pack_dialog_fork"
-        },
-        "psychic_feel_zone_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "psychic_feel_zone.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "psychic_feel_zone_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "psychic_feel_zone.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "psychic_feel_zone_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "psychic_feel_zone.webp",
             "parts": [],
-            "chain": "fork: psychic_feel_zone_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "psychic_feel_zone_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "psychic_feel_zone.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "psychic_feel_zone_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "psychic_feel_zone.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "psychic_feel_zone_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "psychic_feel_zone.webp",
             "parts": [],
-            "chain": "fork: psychic_feel_zone_special_dialog_fork"
-        },
-        "psychic_feel_zone_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "psychic_feel_zone.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "psychic_feel_zone_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "psychic_feel_zone.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "psychic_feel_zone_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "psychic_feel_zone.webp",
             "parts": [],
-            "chain": "fork: psychic_feel_zone_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "psychic_feel_zone_pack_1_text": {
@@ -3617,29 +3076,14 @@
             "mdesc": "Growing the party",
             "image": "psychic_feel_zone.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: psychic_feel_zone_pack_1_dialog_fork"
-        },
-        "psychic_feel_zone_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "psychic_feel_zone.webp",
-            "parts": [],
-            "chain": "choice: psychic_feel_zone_select_path"
-        },
-        "psychic_feel_zone_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "psychic_feel_zone.webp",
-            "parts": [],
-            "chain": "choice: psychic_feel_zone_select_path"
         },
         "psychic_feel_zone_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "psychic_feel_zone.webp",
             "parts": [],
-            "chain": "fork: psychic_feel_zone_select_path_dialog_fork"
+            "chain": "choice: psychic_feel_zone_select_path"
         },
         "venom_swamp_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -3733,76 +3177,29 @@
             "mdesc": "Growing the party",
             "image": "venom_swamp.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: venom_swamp_pack_dialog_fork"
-        },
-        "venom_swamp_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "venom_swamp.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "venom_swamp_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "venom_swamp.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "venom_swamp_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "venom_swamp.webp",
             "parts": [],
-            "chain": "fork: venom_swamp_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "venom_swamp_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "venom_swamp.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "venom_swamp_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "venom_swamp.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "venom_swamp_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "venom_swamp.webp",
             "parts": [],
-            "chain": "fork: venom_swamp_special_dialog_fork"
-        },
-        "venom_swamp_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "venom_swamp.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "venom_swamp_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "venom_swamp.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "venom_swamp_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "venom_swamp.webp",
             "parts": [],
-            "chain": "fork: venom_swamp_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "venom_swamp_pack_1_text": {
@@ -3839,29 +3236,14 @@
             "mdesc": "Growing the party",
             "image": "venom_swamp.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: venom_swamp_pack_1_dialog_fork"
-        },
-        "venom_swamp_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "venom_swamp.webp",
-            "parts": [],
-            "chain": "choice: venom_swamp_select_path"
-        },
-        "venom_swamp_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "venom_swamp.webp",
-            "parts": [],
-            "chain": "choice: venom_swamp_select_path"
         },
         "venom_swamp_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "venom_swamp.webp",
             "parts": [],
-            "chain": "fork: venom_swamp_select_path_dialog_fork"
+            "chain": "choice: venom_swamp_select_path"
         },
         "grand_spellbook_tower_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -3955,76 +3337,29 @@
             "mdesc": "Growing the party",
             "image": "grand_spellbook_tower.webp",
             "parts": [],
-            "vars": "chain_to_ed=>true",
             "chain": "fork: grand_spellbook_tower_pack_dialog_fork"
-        },
-        "grand_spellbook_tower_spell_trap_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "grand_spellbook_tower.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
-        },
-        "grand_spellbook_tower_spell_trap_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Learning new Techniques",
-            "image": "grand_spellbook_tower.webp",
-            "parts": [],
-            "chain": "pick: SPELL_TRAP_PACK",
-            "vars": "loop=>3"
         },
         "grand_spellbook_tower_spell_trap": {
             "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": "grand_spellbook_tower.webp",
             "parts": [],
-            "chain": "fork: grand_spellbook_tower_spell_trap_dialog_fork",
+            "chain": "pick: SPELL_TRAP_PACK",
             "vars": "loop=>3"
-        },
-        "grand_spellbook_tower_special_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "grand_spellbook_tower.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
-        },
-        "grand_spellbook_tower_special_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Special Finds",
-            "image": "grand_spellbook_tower.webp",
-            "parts": [],
-            "chain": "pick: SPECIAL_PACK"
         },
         "grand_spellbook_tower_special": {
             "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": "grand_spellbook_tower.webp",
             "parts": [],
-            "chain": "fork: grand_spellbook_tower_special_dialog_fork"
-        },
-        "grand_spellbook_tower_dupe_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "grand_spellbook_tower.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
-        },
-        "grand_spellbook_tower_dupe_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Expanding on available Ressources",
-            "image": "grand_spellbook_tower.webp",
-            "parts": [],
-            "chain": "bans: before_dupe",
-            "vars": "loop=>2"
+            "chain": "pick: SPECIAL_PACK"
         },
         "grand_spellbook_tower_dupe": {
             "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": "grand_spellbook_tower.webp",
             "parts": [],
-            "chain": "fork: grand_spellbook_tower_dupe_dialog_fork",
+            "chain": "dupe: dupe",
             "vars": "loop=>2"
         },
         "grand_spellbook_tower_pack_1_text": {
@@ -4061,29 +3396,14 @@
             "mdesc": "Growing the party",
             "image": "grand_spellbook_tower.webp",
             "parts": [],
-            "vars": "chain_to_ed=>false",
             "chain": "fork: grand_spellbook_tower_pack_1_dialog_fork"
-        },
-        "grand_spellbook_tower_select_path_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "grand_spellbook_tower.webp",
-            "parts": [],
-            "chain": "choice: grand_spellbook_tower_select_path"
-        },
-        "grand_spellbook_tower_select_path_no_text": {
-            "micon": "area.webp",
-            "mdesc": "Continue Traveling",
-            "image": "grand_spellbook_tower.webp",
-            "parts": [],
-            "chain": "choice: grand_spellbook_tower_select_path"
         },
         "grand_spellbook_tower_select_path": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "grand_spellbook_tower.webp",
             "parts": [],
-            "chain": "fork: grand_spellbook_tower_select_path_dialog_fork"
+            "chain": "choice: grand_spellbook_tower_select_path"
         },
         "duel_0_text": {
             "micon": "therion_irregular.webp",
@@ -4159,12 +3479,12 @@
                     "content": "I'm sure that was not the last time we saw it, but since we won, we should have time to repair some of that scrap Pixies found earlier."
                 }
             ],
-            "chain": "swap: repair_sword"
+            "chain": "fork: check_lost"
         },
         "duel_0_win_no_text": {
             "image": "endless_engine_argyro_system.webp",
             "parts": [],
-            "chain": "swap: repair_sword"
+            "chain": "fork: check_lost"
         },
         "duel_0_win": {
             "image": "endless_engine_argyro_system.webp",
@@ -4199,12 +3519,12 @@
                     "content": "I'm sure that was not the last time we saw it, let's prepare better next time."
                 }
             ],
-            "chain": "choice: duel_lose"
+            "chain": "fork: check_won"
         },
         "duel_0_lose_no_text": {
             "image": "endless_engine_argyro_system.webp",
             "parts": [],
-            "chain": "choice: duel_lose"
+            "chain": "fork: check_won"
         },
         "duel_0_lose": {
             "image": "endless_engine_argyro_system.webp",
@@ -4285,12 +3605,12 @@
                     "content": "I feel like there's more to this tho... Let's not relax just yet."
                 }
             ],
-            "chain": "swap: repair_sword"
+            "chain": "fork: check_lost"
         },
         "duel_1_win_no_text": {
             "image": "endless_engine_argyro_system.webp",
             "parts": [],
-            "chain": "swap: repair_sword"
+            "chain": "fork: check_lost"
         },
         "duel_1_win": {
             "image": "endless_engine_argyro_system.webp",
@@ -4325,12 +3645,12 @@
                     "content": "You're probably right. I feel like there's more to this tho... Let's not relax just yet."
                 }
             ],
-            "chain": "choice: duel_lose"
+            "chain": "fork: check_won"
         },
         "duel_1_lose_no_text": {
             "image": "endless_engine_argyro_system.webp",
             "parts": [],
-            "chain": "choice: duel_lose"
+            "chain": "fork: check_won"
         },
         "duel_1_lose": {
             "image": "endless_engine_argyro_system.webp",
@@ -4411,12 +3731,12 @@
                     "content": "I'm confident we'll defeat her with more preparation!"
                 }
             ],
-            "chain": "swap: repair_sword"
+            "chain": "fork: check_lost"
         },
         "duel_2_win_no_text": {
             "image": "endless_engine_argyro_system.webp",
             "parts": [],
-            "chain": "swap: repair_sword"
+            "chain": "fork: check_lost"
         },
         "duel_2_win": {
             "image": "endless_engine_argyro_system.webp",
@@ -4451,12 +3771,12 @@
                     "content": "I'm confident we'll defeat her with more preparation!"
                 }
             ],
-            "chain": "choice: duel_lose"
+            "chain": "fork: check_won"
         },
         "duel_2_lose_no_text": {
             "image": "endless_engine_argyro_system.webp",
             "parts": [],
-            "chain": "choice: duel_lose"
+            "chain": "fork: check_won"
         },
         "duel_2_lose": {
             "image": "endless_engine_argyro_system.webp",
@@ -4537,12 +3857,12 @@
                     "content": "Let's keep our guard up just in case..."
                 }
             ],
-            "chain": "swap: repair_sword"
+            "chain": "fork: check_lost"
         },
         "duel_3_win_no_text": {
             "image": "endless_engine_argyro_system.webp",
             "parts": [],
-            "chain": "swap: repair_sword"
+            "chain": "fork: check_lost"
         },
         "duel_3_win": {
             "image": "endless_engine_argyro_system.webp",
@@ -4577,12 +3897,12 @@
                     "content": "We can't give up... the next battle will decide it all..."
                 }
             ],
-            "chain": "choice: duel_lose"
+            "chain": "fork: check_won"
         },
         "duel_3_lose_no_text": {
             "image": "endless_engine_argyro_system.webp",
             "parts": [],
-            "chain": "choice: duel_lose"
+            "chain": "fork: check_won"
         },
         "duel_3_lose": {
             "image": "endless_engine_argyro_system.webp",
@@ -4635,107 +3955,49 @@
             "parts": [],
             "chain": "fork: duel_4_dialog_fork"
         },
-        "START_start_game_text": {
-            "micon": "start_game.webp",
-            "mdesc": "Start Game",
-            "iconSize": 70,
-            "parts": [],
-            "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
-            "chain": "area: beginning"
-        },
-        "START_start_game_no_text": {
-            "micon": "start_game.webp",
-            "mdesc": "Start Game",
-            "iconSize": 70,
-            "parts": [],
-            "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
-            "chain": "area: beginning"
-        },
         "START_start_game": {
             "micon": "start_game.webp",
             "mdesc": "Start Game",
             "iconSize": 70,
             "parts": [],
-            "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
-            "chain": "fork: START_start_game_dialog_fork"
-        },
-        "START_settings_text": {
-            "micon": "settings.webp",
-            "mdesc": "Settings",
-            "iconSize": 70,
-            "parts": [],
-            "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
-            "chain": "area: settings"
-        },
-        "START_settings_no_text": {
-            "micon": "settings.webp",
-            "mdesc": "Settings",
-            "iconSize": 70,
-            "parts": [],
-            "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
-            "chain": "area: settings"
+            "vars": "game_mode_setting=>Best of 5&&dialog_setting=>true",
+            "chain": "area: beginning"
         },
         "START_settings": {
             "micon": "settings.webp",
             "mdesc": "Settings",
             "iconSize": 70,
             "parts": [],
-            "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
-            "chain": "fork: START_settings_dialog_fork"
-        },
-        "old_maindeck_pick_text": {
-            "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
-            "parts": [],
-            "chain": "fork: archetypal_first_maindeck_pick"
-        },
-        "old_maindeck_pick_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
-            "parts": [],
-            "chain": "fork: archetypal_first_maindeck_pick"
+            "vars": "game_mode_setting=>Best of 5&&dialog_setting=>true",
+            "chain": "area: settings"
         },
         "old_maindeck_pick": {
             "micon": "pack.webp",
             "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
             "parts": [],
-            "chain": "fork: old_maindeck_pick_dialog_fork"
-        },
-        "old_extradeck_pick_text": {
-            "micon": "pack.webp",
-            "mdesc": "Pick an Archetypal Extra Deck Card of the previous area",
-            "parts": [],
-            "chain": "fork: archetypal_first_extradeck_pick"
-        },
-        "old_extradeck_pick_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Pick an Archetypal Extra Deck Card of the previous area",
-            "parts": [],
-            "chain": "fork: archetypal_first_extradeck_pick"
+            "chain": "fork: archetypal_first_maindeck_pick"
         },
         "old_extradeck_pick": {
             "micon": "pack.webp",
             "mdesc": "Pick an Archetypal Extra Deck Card of the previous area",
             "parts": [],
-            "chain": "fork: old_extradeck_pick_dialog_fork"
-        },
-        "old_power_pick_text": {
-            "micon": "pack.webp",
-            "mdesc": "Maximizing the Power Level of the previous area",
-            "parts": [],
-            "chain": "fork: archetypal_first_power_pick"
-        },
-        "old_power_pick_no_text": {
-            "micon": "pack.webp",
-            "mdesc": "Maximizing the Power Level of the previous area",
-            "parts": [],
-            "chain": "fork: archetypal_first_power_pick"
+            "chain": "fork: archetypal_first_extradeck_pick"
         },
         "old_power_pick": {
             "micon": "pack.webp",
             "mdesc": "Maximizing the Power Level of the previous area",
             "parts": [],
-            "chain": "fork: old_power_pick_dialog_fork"
+            "chain": "fork: archetypal_first_power_pick"
+        },
+        "duel_win": {
+            "parts": [],
+            "vars": "win_count=>+1",
+            "chain": "fork: has_won"
+        },
+        "duel_lose": {
+            "parts": [],
+            "vars": "loss_count=>+1",
+            "chain": "fork: has_lost"
         }
     },
     "choice": {
@@ -4749,14 +4011,14 @@
                     "name": "Best of 5",
                     "desc": "Play up to 5 duels and potentially unlock a second archetype\n\nDefault: Best of 5",
                     "img": "best_of_5.webp",
-                    "vars": "game_mode_setting=>bo5",
+                    "vars": "game_mode_setting=>Best of 5",
                     "chain": "area: settings"
                 },
                 {
                     "name": "Best of 3",
                     "desc": "Play up to 3 duels and play with only one archetype\n\nDefault: Best of 5",
                     "img": "best_of_3.webp",
-                    "vars": "game_mode_setting=>bo3",
+                    "vars": "game_mode_setting=>Best of 3",
                     "chain": "area: settings"
                 }
             ]
@@ -5744,6 +5006,42 @@
                     "chain": "area: venom_swamp_3"
                 }
             ]
+        },
+        "has_won": {
+            "image": "endless_engine_argyro_system.webp",
+            "title": "You have won the <<game_mode_setting>>!<<win_count>> Do you want to keep playing, or proceed to the ending screen?",
+            "list": [
+                {
+                    "name": "Continue playing",
+                    "desc": "Countinue playing, just for fun!",
+                    "img": "continue_playing.webp",
+                    "chain": "swap: repair_sword"
+                },
+                {
+                    "name": "End the game",
+                    "desc": "Proceed to the ending screen!",
+                    "img": "end_game.webp",
+                    "chain": "ends: win"
+                }
+            ]
+        },
+        "has_lost": {
+            "image": "endless_engine_argyro_system.webp",
+            "title": "You have lost the <<game_mode_setting>>!<<loss_count>> Do you want to keep playing, or proceed to the ending screen?",
+            "list": [
+                {
+                    "name": "Continue playing",
+                    "desc": "Countinue playing, just for fun!",
+                    "img": "continue_playing.webp",
+                    "chain": "choice: duel_lose"
+                },
+                {
+                    "name": "End the game",
+                    "desc": "Proceed to the ending screen!",
+                    "img": "end_game.webp",
+                    "chain": "ends: lose"
+                }
+            ]
         }
     },
     "fork": {
@@ -5754,7 +5052,7 @@
         ],
         "loop_dupe": [
             {
-                "loop>0": "bans: before_dupe"
+                "loop>0": "dupe: dupe"
             }
         ],
         "archetypal_first_maindeck_pick": [
@@ -6003,6 +5301,102 @@
                 "chain_to_ed=true": "pack: SPELLCASTER_ED_PACK"
             }
         ],
+        "check_won": [
+            {
+                "game_mode_setting=Best of 3": "fork: check_won_bo3"
+            },
+            {
+                "game_mode_setting=Best of 5": "fork: check_won_bo5"
+            }
+        ],
+        "check_won_bo3": [
+            {
+                "win_count>=2": "choice: has_won"
+            },
+            {
+                "win_count<2": "text: duel_lose"
+            }
+        ],
+        "check_won_bo5": [
+            {
+                "win_count>=3": "choice: has_won"
+            },
+            {
+                "win_count<3": "text: duel_lose"
+            }
+        ],
+        "check_lost": [
+            {
+                "game_mode_setting=Best of 3": "fork: check_lost_bo3"
+            },
+            {
+                "game_mode_setting=Best of 5": "fork: check_lost_bo5"
+            }
+        ],
+        "check_lost_bo3": [
+            {
+                "loss_count>=2": "choice: has_lost"
+            },
+            {
+                "loss_count<2": "text: duel_win"
+            }
+        ],
+        "check_lost_bo5": [
+            {
+                "loss_count>=3": "choice: has_lost"
+            },
+            {
+                "loss_count<3": "text: duel_win"
+            }
+        ],
+        "has_won": [
+            {
+                "game_mode_setting=Best of 3": "fork: has_won_bo3"
+            },
+            {
+                "game_mode_setting=Best of 5": "fork: has_won_bo5"
+            }
+        ],
+        "has_won_bo3": [
+            {
+                "win_count>=2": "choice: has_won"
+            },
+            {
+                "win_count<2": "swap: repair_sword"
+            }
+        ],
+        "has_won_bo5": [
+            {
+                "win_count>=3": "choice: has_won"
+            },
+            {
+                "win_count<3": "swap: repair_sword"
+            }
+        ],
+        "has_lost": [
+            {
+                "game_mode_setting=Best of 3": "fork: has_lost_bo3"
+            },
+            {
+                "game_mode_setting=Best of 5": "fork: has_lost_bo5"
+            }
+        ],
+        "has_lost_bo3": [
+            {
+                "loss_count>=2": "choice: has_lost"
+            },
+            {
+                "loss_count<2": "choice: duel_lose"
+            }
+        ],
+        "has_lost_bo5": [
+            {
+                "loss_count>=3": "choice: has_lost"
+            },
+            {
+                "loss_count<3": "choice: duel_lose"
+            }
+        ],
         "start_dialog_fork": [
             {
                 "dialog_setting=true": "text: start_text"
@@ -6059,44 +5453,12 @@
                 "dialog_setting=false": "text: wetlands_pack_no_text"
             }
         ],
-        "wetlands_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: wetlands_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: wetlands_spell_trap_no_text"
-            }
-        ],
-        "wetlands_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: wetlands_special_text"
-            },
-            {
-                "dialog_setting=false": "text: wetlands_special_no_text"
-            }
-        ],
-        "wetlands_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: wetlands_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: wetlands_dupe_no_text"
-            }
-        ],
         "wetlands_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: wetlands_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: wetlands_pack_1_no_text"
-            }
-        ],
-        "wetlands_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: wetlands_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: wetlands_select_path_no_text"
             }
         ],
         "ancient_forest_start_dialog_fork": [
@@ -6115,44 +5477,12 @@
                 "dialog_setting=false": "text: ancient_forest_pack_no_text"
             }
         ],
-        "ancient_forest_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: ancient_forest_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: ancient_forest_spell_trap_no_text"
-            }
-        ],
-        "ancient_forest_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: ancient_forest_special_text"
-            },
-            {
-                "dialog_setting=false": "text: ancient_forest_special_no_text"
-            }
-        ],
-        "ancient_forest_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: ancient_forest_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: ancient_forest_dupe_no_text"
-            }
-        ],
         "ancient_forest_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: ancient_forest_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: ancient_forest_pack_1_no_text"
-            }
-        ],
-        "ancient_forest_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: ancient_forest_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: ancient_forest_select_path_no_text"
             }
         ],
         "cynet_universe_start_dialog_fork": [
@@ -6171,44 +5501,12 @@
                 "dialog_setting=false": "text: cynet_universe_pack_no_text"
             }
         ],
-        "cynet_universe_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: cynet_universe_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: cynet_universe_spell_trap_no_text"
-            }
-        ],
-        "cynet_universe_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: cynet_universe_special_text"
-            },
-            {
-                "dialog_setting=false": "text: cynet_universe_special_no_text"
-            }
-        ],
-        "cynet_universe_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: cynet_universe_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: cynet_universe_dupe_no_text"
-            }
-        ],
         "cynet_universe_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: cynet_universe_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: cynet_universe_pack_1_no_text"
-            }
-        ],
-        "cynet_universe_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: cynet_universe_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: cynet_universe_select_path_no_text"
             }
         ],
         "dark_world_start_dialog_fork": [
@@ -6227,44 +5525,12 @@
                 "dialog_setting=false": "text: dark_world_pack_no_text"
             }
         ],
-        "dark_world_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: dark_world_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: dark_world_spell_trap_no_text"
-            }
-        ],
-        "dark_world_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: dark_world_special_text"
-            },
-            {
-                "dialog_setting=false": "text: dark_world_special_no_text"
-            }
-        ],
-        "dark_world_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: dark_world_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: dark_world_dupe_no_text"
-            }
-        ],
         "dark_world_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: dark_world_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: dark_world_pack_1_no_text"
-            }
-        ],
-        "dark_world_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: dark_world_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: dark_world_select_path_no_text"
             }
         ],
         "deepest_depths_start_dialog_fork": [
@@ -6283,44 +5549,12 @@
                 "dialog_setting=false": "text: deepest_depths_pack_no_text"
             }
         ],
-        "deepest_depths_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: deepest_depths_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: deepest_depths_spell_trap_no_text"
-            }
-        ],
-        "deepest_depths_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: deepest_depths_special_text"
-            },
-            {
-                "dialog_setting=false": "text: deepest_depths_special_no_text"
-            }
-        ],
-        "deepest_depths_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: deepest_depths_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: deepest_depths_dupe_no_text"
-            }
-        ],
         "deepest_depths_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: deepest_depths_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: deepest_depths_pack_1_no_text"
-            }
-        ],
-        "deepest_depths_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: deepest_depths_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: deepest_depths_select_path_no_text"
             }
         ],
         "world_armor_start_dialog_fork": [
@@ -6339,44 +5573,12 @@
                 "dialog_setting=false": "text: world_armor_pack_no_text"
             }
         ],
-        "world_armor_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: world_armor_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: world_armor_spell_trap_no_text"
-            }
-        ],
-        "world_armor_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: world_armor_special_text"
-            },
-            {
-                "dialog_setting=false": "text: world_armor_special_no_text"
-            }
-        ],
-        "world_armor_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: world_armor_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: world_armor_dupe_no_text"
-            }
-        ],
         "world_armor_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: world_armor_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: world_armor_pack_1_no_text"
-            }
-        ],
-        "world_armor_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: world_armor_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: world_armor_select_path_no_text"
             }
         ],
         "geartown_start_dialog_fork": [
@@ -6395,44 +5597,12 @@
                 "dialog_setting=false": "text: geartown_pack_no_text"
             }
         ],
-        "geartown_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: geartown_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: geartown_spell_trap_no_text"
-            }
-        ],
-        "geartown_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: geartown_special_text"
-            },
-            {
-                "dialog_setting=false": "text: geartown_special_no_text"
-            }
-        ],
-        "geartown_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: geartown_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: geartown_dupe_no_text"
-            }
-        ],
         "geartown_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: geartown_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: geartown_pack_1_no_text"
-            }
-        ],
-        "geartown_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: geartown_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: geartown_select_path_no_text"
             }
         ],
         "world_tree_start_dialog_fork": [
@@ -6451,44 +5621,12 @@
                 "dialog_setting=false": "text: world_tree_pack_no_text"
             }
         ],
-        "world_tree_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: world_tree_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: world_tree_spell_trap_no_text"
-            }
-        ],
-        "world_tree_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: world_tree_special_text"
-            },
-            {
-                "dialog_setting=false": "text: world_tree_special_no_text"
-            }
-        ],
-        "world_tree_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: world_tree_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: world_tree_dupe_no_text"
-            }
-        ],
         "world_tree_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: world_tree_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: world_tree_pack_1_no_text"
-            }
-        ],
-        "world_tree_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: world_tree_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: world_tree_select_path_no_text"
             }
         ],
         "psychic_feel_zone_start_dialog_fork": [
@@ -6507,44 +5645,12 @@
                 "dialog_setting=false": "text: psychic_feel_zone_pack_no_text"
             }
         ],
-        "psychic_feel_zone_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: psychic_feel_zone_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: psychic_feel_zone_spell_trap_no_text"
-            }
-        ],
-        "psychic_feel_zone_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: psychic_feel_zone_special_text"
-            },
-            {
-                "dialog_setting=false": "text: psychic_feel_zone_special_no_text"
-            }
-        ],
-        "psychic_feel_zone_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: psychic_feel_zone_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: psychic_feel_zone_dupe_no_text"
-            }
-        ],
         "psychic_feel_zone_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: psychic_feel_zone_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: psychic_feel_zone_pack_1_no_text"
-            }
-        ],
-        "psychic_feel_zone_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: psychic_feel_zone_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: psychic_feel_zone_select_path_no_text"
             }
         ],
         "venom_swamp_start_dialog_fork": [
@@ -6563,44 +5669,12 @@
                 "dialog_setting=false": "text: venom_swamp_pack_no_text"
             }
         ],
-        "venom_swamp_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: venom_swamp_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: venom_swamp_spell_trap_no_text"
-            }
-        ],
-        "venom_swamp_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: venom_swamp_special_text"
-            },
-            {
-                "dialog_setting=false": "text: venom_swamp_special_no_text"
-            }
-        ],
-        "venom_swamp_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: venom_swamp_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: venom_swamp_dupe_no_text"
-            }
-        ],
         "venom_swamp_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: venom_swamp_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: venom_swamp_pack_1_no_text"
-            }
-        ],
-        "venom_swamp_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: venom_swamp_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: venom_swamp_select_path_no_text"
             }
         ],
         "grand_spellbook_tower_start_dialog_fork": [
@@ -6619,44 +5693,12 @@
                 "dialog_setting=false": "text: grand_spellbook_tower_pack_no_text"
             }
         ],
-        "grand_spellbook_tower_spell_trap_dialog_fork": [
-            {
-                "dialog_setting=true": "text: grand_spellbook_tower_spell_trap_text"
-            },
-            {
-                "dialog_setting=false": "text: grand_spellbook_tower_spell_trap_no_text"
-            }
-        ],
-        "grand_spellbook_tower_special_dialog_fork": [
-            {
-                "dialog_setting=true": "text: grand_spellbook_tower_special_text"
-            },
-            {
-                "dialog_setting=false": "text: grand_spellbook_tower_special_no_text"
-            }
-        ],
-        "grand_spellbook_tower_dupe_dialog_fork": [
-            {
-                "dialog_setting=true": "text: grand_spellbook_tower_dupe_text"
-            },
-            {
-                "dialog_setting=false": "text: grand_spellbook_tower_dupe_no_text"
-            }
-        ],
         "grand_spellbook_tower_pack_1_dialog_fork": [
             {
                 "dialog_setting=true": "text: grand_spellbook_tower_pack_1_text"
             },
             {
                 "dialog_setting=false": "text: grand_spellbook_tower_pack_1_no_text"
-            }
-        ],
-        "grand_spellbook_tower_select_path_dialog_fork": [
-            {
-                "dialog_setting=true": "text: grand_spellbook_tower_select_path_text"
-            },
-            {
-                "dialog_setting=false": "text: grand_spellbook_tower_select_path_no_text"
             }
         ],
         "duel_0_dialog_fork": [
@@ -6761,46 +5803,6 @@
             },
             {
                 "dialog_setting=false": "text: duel_4_no_text"
-            }
-        ],
-        "START_start_game_dialog_fork": [
-            {
-                "dialog_setting=true": "text: START_start_game_text"
-            },
-            {
-                "dialog_setting=false": "text: START_start_game_no_text"
-            }
-        ],
-        "START_settings_dialog_fork": [
-            {
-                "dialog_setting=true": "text: START_settings_text"
-            },
-            {
-                "dialog_setting=false": "text: START_settings_no_text"
-            }
-        ],
-        "old_maindeck_pick_dialog_fork": [
-            {
-                "dialog_setting=true": "text: old_maindeck_pick_text"
-            },
-            {
-                "dialog_setting=false": "text: old_maindeck_pick_no_text"
-            }
-        ],
-        "old_extradeck_pick_dialog_fork": [
-            {
-                "dialog_setting=true": "text: old_extradeck_pick_text"
-            },
-            {
-                "dialog_setting=false": "text: old_extradeck_pick_no_text"
-            }
-        ],
-        "old_power_pick_dialog_fork": [
-            {
-                "dialog_setting=true": "text: old_power_pick_text"
-            },
-            {
-                "dialog_setting=false": "text: old_power_pick_no_text"
             }
         ]
     },
@@ -7051,76 +6053,17 @@
         "dupe": {
             "shows": 10,
             "removeRedundant": true,
-            "chain": "bans: after_dupe",
+            "chain": "fork: loop_dupe",
             "vars": "loop=>-1"
         }
     },
-    "bans": {
-        "before_dupe": {
-            "changes": [
-                {
-                    "Spright Double Cross": 1
-                },
-                {
-                    "Fallen of Argyros": 2
-                },
-                {
-                    "Spright Blue": 2
-                },
-                {
-                    "Spright Jet": 2
-                },
-                {
-                    "Spright Pixies": 2
-                },
-                {
-                    "Spright Starter": 2
-                },
-                {
-                    "Spright Elf": 2
-                },
-                {
-                    "Gigantic Spright": 2
-                }
-            ],
-            "chain": "dupe: dupe"
-        },
-        "after_dupe": {
-            "changes": [
-                {
-                    "Spright Double Cross": 3
-                },
-                {
-                    "Fallen of Argyros": 3
-                },
-                {
-                    "Spright Blue": 3
-                },
-                {
-                    "Spright Jet": 3
-                },
-                {
-                    "Spright Pixies": 3
-                },
-                {
-                    "Spright Starter": 3
-                },
-                {
-                    "Spright Elf": 3
-                },
-                {
-                    "Gigantic Spright": 3
-                }
-            ],
-            "chain": "fork: loop_dupe"
-        }
-    },
+    "bans": {},
     "duel": {
         "duel_0": {
             "image": "endless_engine_argyro_system.webp",
             "dbimg": "therion_irregular_avatar.webp",
             "title": "Therion Irregular",
-            "lives": 1,
+            "lives": 0,
             "wins": "text: duel_0_win",
             "lose": "text: duel_0_lose"
         },
@@ -7128,7 +6071,7 @@
             "image": "endless_engine_argyro_system.webp",
             "dbimg": "therion_irregular_avatar.webp",
             "title": "Therion Irregular",
-            "lives": 1,
+            "lives": 0,
             "wins": "text: duel_1_win",
             "lose": "text: duel_1_lose"
         },
@@ -7136,7 +6079,7 @@
             "image": "endless_engine_argyro_system.webp",
             "dbimg": "therion_empress_alasia_avatar.webp",
             "title": "Therion Empress Alasia",
-            "lives": 1,
+            "lives": 0,
             "wins": "text: duel_2_win",
             "lose": "text: duel_2_lose"
         },
@@ -7144,7 +6087,7 @@
             "image": "endless_engine_argyro_system.webp",
             "dbimg": "therion_empress_alasia_avatar.webp",
             "title": "Therion Empress Alasia",
-            "lives": 1,
+            "lives": 0,
             "wins": "text: duel_3_win",
             "lose": "text: duel_3_lose"
         },
@@ -7152,7 +6095,7 @@
             "image": "endless_engine_argyro_system.webp",
             "dbimg": "therion_empress_alasia_avatar.webp",
             "title": "Therion Empress Alasia",
-            "lives": 1,
+            "lives": 0,
             "wins": "text: duel_4_win",
             "lose": "text: duel_4_lose"
         }

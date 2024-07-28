@@ -80,6 +80,7 @@ dialogs = {
                 {"type": "text", "content": "I..."},
                 {"type": "text", "content": "I need to find them..."},
             ],
+            "vars": "win_count=>0&&loss_count=>0",
         },
         "starter_deck": {
             "micon": "pack.webp",
@@ -550,10 +551,11 @@ dialogs = {
         ]
     },
 }
-# Issue: Remove redundant? (pack, pick; like with dupe where it works idk) -> issue with ddm
-# TODO: implement game mode setting
-# TODO: end campaign based on wins/losses (duels cost 0 lives, manage lives and ends manually?)
-# TODO: change icon to argyros
+# BEFORE RELEASE
+# Issue: Remove redundant? (pack, pick; like with dupe where it works idk) -> issue with ddm, not fixed in current version
+# TODO: change icon to argyros/use fancy banner
+# TODO: map icons
+# TODO: a bit more dialog
 
 def area_stages(area):
     return [
@@ -717,7 +719,7 @@ def getAreaTextObjects(area):
             "mdesc": "Expanding on available Ressources",
             "image": f"{area}.webp",
             "parts": [],
-            "chain": "bans: before_dupe",
+            "chain": "dupe: dupe",
             "vars": "loop=>2",
         },
         "pack_1": {
@@ -752,13 +754,13 @@ def getDuelTextObjects(num):
         objs[f"{num}_win"] = {
             "image": "endless_engine_argyro_system.webp",
             "parts": dialogToParts(dialogs["duel"][f"duel_{num}_win"]),
-            "chain": f"swap: repair_sword",
+            "chain": f"fork: check_lost",
         }
     if f"duel_{num}_lose" in dialogs["duel"]:
         objs[f"{num}_lose"] = {
             "image": "endless_engine_argyro_system.webp",
             "parts": dialogToParts(dialogs["duel"][f"duel_{num}_lose"]),
-            "chain": f"choice: duel_lose",
+            "chain": f"fork: check_won",
         }
     return objs
 
@@ -776,7 +778,7 @@ text_objects["START_start_game"] = {
     "mdesc": "Start Game",
     "iconSize": 70,
     "parts": [],
-    "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
+    "vars": "game_mode_setting=>Best of 5&&dialog_setting=>true",
     "chain": "area: beginning",
 }
 text_objects["START_settings"] = {
@@ -784,7 +786,7 @@ text_objects["START_settings"] = {
     "mdesc": "Settings",
     "iconSize": 70,
     "parts": [],
-    "vars": "game_mode_setting=>bo5&&dialog_setting=>true",
+    "vars": "game_mode_setting=>Best of 5&&dialog_setting=>true",
     "chain": "area: settings",
 }
 text_objects["old_maindeck_pick"] = {
@@ -805,6 +807,16 @@ text_objects["old_power_pick"] = {
     "parts": [],
     "chain": "fork: archetypal_first_power_pick",
 }
+text_objects["duel_win"] = {
+    "parts": [],
+    "vars": "win_count=>+1",
+    "chain": "fork: has_won",
+}
+text_objects["duel_lose"] = {
+    "parts": [],
+    "vars": "loss_count=>+1",
+    "chain": "fork: has_lost",
+}
 # endregion
 
 # region choice_objects
@@ -819,14 +831,14 @@ choice_objects = {
                 "name": "Best of 5",
                 "desc": "Play up to 5 duels and potentially unlock a second archetype\n\nDefault: Best of 5",
                 "img": "best_of_5.webp",
-                "vars": "game_mode_setting=>bo5",
+                "vars": "game_mode_setting=>Best of 5",
                 "chain": "area: settings"
             },
             {
                 "name": "Best of 3",
                 "desc": "Play up to 3 duels and play with only one archetype\n\nDefault: Best of 5",
                 "img": "best_of_3.webp",
-                "vars": "game_mode_setting=>bo3",
+                "vars": "game_mode_setting=>Best of 3",
                 "chain": "area: settings"
             }
         ],
@@ -916,6 +928,43 @@ for area in areas:
             for second_area in areas if second_area != area
         ],
     }
+
+choice_objects["has_won"] = {
+    "image": "endless_engine_argyro_system.webp",
+    "title": "You have won the <<game_mode_setting>>!<<win_count>> Do you want to keep playing, or proceed to the ending screen?",
+    "list": [
+        {
+            "name": "Continue playing",
+            "desc": "Countinue playing, just for fun!",
+            "img": "continue_playing.webp",
+            "chain": "swap: repair_sword",
+        },
+        {
+            "name": "End the game",
+            "desc": "Proceed to the ending screen!",
+            "img": "end_game.webp",
+            "chain": "ends: win",
+        }
+    ],
+}
+choice_objects["has_lost"] = {
+    "image": "endless_engine_argyro_system.webp",
+    "title": "You have lost the <<game_mode_setting>>!<<loss_count>> Do you want to keep playing, or proceed to the ending screen?",
+    "list": [
+        {
+            "name": "Continue playing",
+            "desc": "Countinue playing, just for fun!",
+            "img": "continue_playing.webp",
+            "chain": "choice: duel_lose",
+        },
+        {
+            "name": "End the game",
+            "desc": "Proceed to the ending screen!",
+            "img": "end_game.webp",
+            "chain": "ends: lose",
+        }
+    ],
+}
 # endregion
 
 # region fork_objects
@@ -924,7 +973,7 @@ fork_objects = {
         {"loop>0": "pick: SPELL_TRAP_PACK"}
     ],
     "loop_dupe": [
-        {"loop>0": "bans: before_dupe"}
+        {"loop>0": "dupe: dupe"}
     ],
     "archetypal_first_maindeck_pick": [
         {
@@ -977,6 +1026,55 @@ for area in areas:
     fork_objects[f"{area}_chain_to_ed"] = [
             {"chain_to_ed=true": f"pack: {type_dict[area].upper()}_ED_PACK"}
         ]
+fork_objects["check_won"] = [
+    {"game_mode_setting=Best of 3": "fork: check_won_bo3"},
+    {"game_mode_setting=Best of 5": "fork: check_won_bo5"}
+]
+fork_objects["check_won_bo3"] = [
+    {"win_count>=2": "choice: has_won"},
+    {"win_count<2": "text: duel_lose"}
+]
+fork_objects["check_won_bo5"] = [
+    {"win_count>=3": "choice: has_won"},
+    {"win_count<3": "text: duel_lose"}
+]
+fork_objects["check_lost"] = [
+    {"game_mode_setting=Best of 3": "fork: check_lost_bo3"},
+    {"game_mode_setting=Best of 5": "fork: check_lost_bo5"}
+]
+fork_objects["check_lost_bo3"] = [
+    {"loss_count>=2": "choice: has_lost"},
+    {"loss_count<2": "text: duel_win"}
+]
+fork_objects["check_lost_bo5"] = [
+    {"loss_count>=3": "choice: has_lost"},
+    {"loss_count<3": "text: duel_win"}
+]
+
+fork_objects["has_won"] = [
+    {"game_mode_setting=Best of 3": "fork: has_won_bo3"},
+    {"game_mode_setting=Best of 5": "fork: has_won_bo5"}
+]
+fork_objects["has_won_bo3"] = [
+    {"win_count>=2": "choice: has_won"},
+    {"win_count<2": "swap: repair_sword"}
+]
+fork_objects["has_won_bo5"] = [
+    {"win_count>=3": "choice: has_won"},
+    {"win_count<3": "swap: repair_sword"}
+]
+fork_objects["has_lost"] = [
+    {"game_mode_setting=Best of 3": "fork: has_lost_bo3"},
+    {"game_mode_setting=Best of 5": "fork: has_lost_bo5"}
+]
+fork_objects["has_lost_bo3"] = [
+    {"loss_count>=2": "choice: has_lost"},
+    {"loss_count<2": "choice: duel_lose"}
+]
+fork_objects["has_lost_bo5"] = [
+    {"loss_count>=3": "choice: has_lost"},
+    {"loss_count<3": "choice: duel_lose"}
+]
 # endregion
 
 # region pack_objects
@@ -1043,16 +1141,17 @@ dupe_objects = {
     "dupe": {
         "shows": 10,
         "removeRedundant": True,
-        "chain": "bans: after_dupe",
+        "chain": "fork: loop_dupe",
         "vars": "loop=>-1",
     }
 }
 # endregion
 
 #region bans_objects
+'''
 bans_objects = {
     "before_dupe": {
-        "changes": [
+        "list": [
             {"Spright Double Cross": 1},
             {"Fallen of Argyros": 2},
             {"Spright Blue": 2},
@@ -1065,7 +1164,7 @@ bans_objects = {
         "chain": "dupe: dupe",
     },
     "after_dupe": {
-        "changes": [
+        "list": [
             {"Spright Double Cross": 3},
             {"Fallen of Argyros": 3},
             {"Spright Blue": 3},
@@ -1078,6 +1177,8 @@ bans_objects = {
         "chain": "fork: loop_dupe",
     }
 }
+'''
+bans_objects = {} # Removed until there might be a way to silently ban cards again or sth similar
 #endregion
 
 # region duel_objects
@@ -1088,7 +1189,7 @@ for i in range(stage_count):
         "image": "endless_engine_argyro_system.webp",
         "dbimg": f"{enemy}_avatar.webp",
         "title": transformToName(enemy),
-        "lives": 1,
+        "lives": 0,
         "wins": f"text: duel_{i}_win",
         "lose": f"text: duel_{i}_lose",
     }
@@ -1112,21 +1213,24 @@ ends_objects = {
 #endregion
 
 #region dialog_setting
-# TODO: remove unnecessaryoptions from copied objects
+# TODO: remove unnecessary options from copied objects
 modified_text_objects = {}
 for text_key, text_val in text_objects.items():
     new_object = text_val.copy()
-    modified_text_objects[f"{text_key}_text"] = new_object.copy()
-    
-    new_object["parts"] = []
-    modified_text_objects[f"{text_key}_no_text"] = new_object.copy()
-    
-    fork_objects[f"{text_key}_dialog_fork"] = [
-        {"dialog_setting=true": f"text: {text_key}_text"},
-        {"dialog_setting=false": f"text: {text_key}_no_text"}
-    ]
-    
-    new_object["chain"] = f"fork: {text_key}_dialog_fork"
+    if text_val["parts"] != []:
+        modified_text_objects[f"{text_key}_text"] = new_object.copy()
+        
+        new_object["parts"] = []
+        modified_text_objects[f"{text_key}_no_text"] = new_object.copy()
+        
+        fork_objects[f"{text_key}_dialog_fork"] = [
+            {"dialog_setting=true": f"text: {text_key}_text"},
+            {"dialog_setting=false": f"text: {text_key}_no_text"}
+        ]
+        
+        new_object["chain"] = f"fork: {text_key}_dialog_fork"
+        if "vars" in new_object.keys():
+            del new_object["vars"] # prevent var operations from being run twice
     modified_text_objects[text_key] = new_object
     
 text_objects = modified_text_objects
