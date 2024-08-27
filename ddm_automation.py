@@ -1,7 +1,3 @@
-# Credits for dc post:
-# Konami
-# TextStudio
-
 import json
 import pyperclip
 
@@ -271,6 +267,12 @@ dialogs = {
                 "ronintoadin",
                 "Many people were inspired by your fight and joined our cause!",
             )
+        ],
+        "select_path": [
+            (
+                "ronintoadin",
+                "We are experienced warriors, but against the empress we will require bigger numbers... I suggest we venture to a new area!",
+            )
         ]
     },
     "ancient_forest": {
@@ -298,6 +300,12 @@ dialogs = {
             (
                 "baby_raccoon_ponpoko",
                 "That dude was scary looking, I'll ask some more friends to join us!",
+            )
+        ],
+        "select_path": [
+            (
+                "baby_raccoon_ponpoko",
+                "The empress is way too overpowered! I bet we'll defeat her with more friends tho, so let's visit a new area!",
             )
         ]
     },
@@ -327,6 +335,12 @@ dialogs = {
                 "stack_reviver",
                 "00111110 00100000 01000001 01101100 01101100 01101001 01100101 01110011 00101011 00101011",
             )
+        ],
+        "select_path": [
+            (
+                "stack_reviver",
+                "00111110 00100000 01000101 01110110 01100001 01101100 01110101 01100001 01110100 01100101 00111010 00100000 01100101 01101101 01110000 01110010 01100101 01110011 01110011 00101110 01110000 01101111 01110111 01100101 01110010 00100000 00111110 00100000 01110100 01101000 01101001 01110011 00101110 01110000 01101111 01110111 01100101 01110010 00001010 00111110 00100000 01010010 01100101 01110011 01110101 01101100 01110100 00111010 00100000 01110100 01110010 01110101 01100101 00001010 00111110 00100000 01000001 01100011 01110100 01101001 01101111 01101110 00111010 00100000 01000010 01000110 01010011 00100000 01101001 01101110 01101001 01110100 01101001 01100001 01101100 01101001 01111010 01100101 01100100",
+            )
         ]
     },
     "dark_world": {
@@ -354,6 +368,12 @@ dialogs = {
             (
                 "dark_beckoning_beast",
                 "Look, we have some newcommers...",
+            )
+        ],
+        "select_path": [
+            (
+                "dark_beckoning_beast",
+                "Listen, that empress has a lot of evil energy. I will release you, so you can defeat her and bring her soul to the Dark World.",
             )
         ]
     },
@@ -383,6 +403,12 @@ dialogs = {
                 "paces_light_of_the_ghoti",
                 "!!",
             )
+        ],
+        "select_path": [
+            (
+                "paces_light_of_the_ghoti",
+                "^^",
+            )
         ]
     },
     "world_armor": {
@@ -408,8 +434,14 @@ dialogs = {
         ],
         "pack_1": [
             (
-                "paces_light_of_the_ghoti",
-                "!!",
+                "crusadia_krawler",
+                "More of them keep coming, but so far it's been working so let's continue",
+            )
+        ],
+        "select_path": [
+            (
+                "crusadia_krawler",
+                "I think our swarm is filled with the strongest insects by now, let's leave this area!",
             )
         ]
     },
@@ -435,6 +467,12 @@ dialogs = {
             (
                 "crystron_citree",
                 "For the next battle we started mass-producing new machines!",
+            )
+        ],
+        "select_path": [
+            (
+                "crystron_citree",
+                "I think do defeat that empress we need to modify the machines with some new technology, let's explore some new areas!",
             )
         ]
     },
@@ -464,6 +502,12 @@ dialogs = {
                 "predaplant_chlamydosundew",
                 "Your energy makes new plants grow so quickly...",
             )
+        ],
+        "select_path": [
+            (
+                "predaplant_chlamydosundew",
+                "The symbiosis is working... let's grow to even further areas!",
+            )
         ]
     },
     "psychic_feel_zone": {
@@ -491,6 +535,12 @@ dialogs = {
             (
                 "psy_frame_driver",
                 "If we accelerate we might find more psychics soon!",
+            )
+        ],
+        "select_path": [
+            (
+                "psy_frame_driver",
+                "Let's fill your deck with some other monsters, I think if you keep drawing me we won't defeat the empress...",
             )
         ]
     },
@@ -520,6 +570,12 @@ dialogs = {
                 "reptilianne_lamia",
                 "More and more reptiles seem to be interested in you... I'm not letting them touch you tho, so all good!",
             )
+        ],
+        "select_path": [
+            (
+                "reptilianne_lamia",
+                "I'm getting a bit hungry... But I wanna save you for later, let's go and find some prey!",
+            )
         ]
     },
     "grand_spellbook_tower": {
@@ -548,14 +604,20 @@ dialogs = {
                 "gagaga_sister",
                 "The masters were impressed by your techniques, more of them came to learn from you!",
             )
+        ],
+        "select_path": [
+            (
+                "gagaga_sister",
+                "If we want to become master spellcasters aswell, we'll need to explore the world!",
+            )
         ]
     },
 }
-# BEFORE RELEASE
-# Issue: Remove redundant? (pack, pick; like with dupe where it works idk) -> issue with ddm, not fixed in current version
-# TODO: change icon to argyros/use fancy banner
-# TODO: map icons
+# --- First Release ---
+# TODO: map icons (spelltrap, special, dupe)
+# TODO: Foil
 # TODO: a bit more dialog
+# Issue: Remove redundant? (pack, pick; like with dupe where it works idk) -> issue with ddm, not fixed in current version?
 
 def area_stages(area):
     return [
@@ -692,7 +754,7 @@ def getAreaTextObjects(area):
             "chain": f"pack: {type_dict[area].upper()}_BONUS_PACK",
         },
         "pack": {
-            "micon": "pack.webp",  # TODO: more custom event icons
+            "micon": "pack.webp",
             "mdesc": "Growing the party",
             "image": f"{area}.webp",
             "parts": dialogToParts(dialogs[area]["pack"]),
@@ -700,7 +762,7 @@ def getAreaTextObjects(area):
             "chain": f"pack: {type_dict[area].upper()}_MD_PACK",
         },
         "spell_trap": {
-            "micon": "pack.webp",  # TODO: more custom event icons
+            "micon": "pack.webp",
             "mdesc": "Learning new Techniques",
             "image": f"{area}.webp",
             "parts": [],
@@ -708,14 +770,14 @@ def getAreaTextObjects(area):
             "vars": "loop=>3",
         },
         "special": {
-            "micon": "pack.webp",  # TODO: more custom event icons
+            "micon": "pack.webp",
             "mdesc": "Special Finds",
             "image": f"{area}.webp",
             "parts": [],
             "chain": f"pick: SPECIAL_PACK",
         },
         "dupe": {
-            "micon": "pack.webp",  # TODO: more custom event icons
+            "micon": "pack.webp",
             "mdesc": "Expanding on available Ressources",
             "image": f"{area}.webp",
             "parts": [],
@@ -723,7 +785,7 @@ def getAreaTextObjects(area):
             "vars": "loop=>2",
         },
         "pack_1": {
-            "micon": "pack.webp",  # TODO: more custom event icons
+            "micon": "pack.webp",
             "mdesc": "Growing the party",
             "image": f"{area}.webp",
             "parts": dialogToParts(dialogs[area]["pack_1"]),
@@ -734,7 +796,7 @@ def getAreaTextObjects(area):
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": f"{area}.webp",
-            "parts": [], # TODO: write more dialog
+            "parts": dialogToParts(dialogs[area]["select_path"]),
             "chain": f"choice: {area}_select_path",
         }
     }
@@ -790,19 +852,19 @@ text_objects["START_settings"] = {
     "chain": "area: settings",
 }
 text_objects["old_maindeck_pick"] = {
-    "micon": "pack.webp",  # TODO: more custom event icons
+    "micon": "pack.webp",
     "mdesc": "Pick Archetypal Main Deck Cards of the previous area",
     "parts": [],
     "chain": "fork: archetypal_first_maindeck_pick",
 }
 text_objects["old_extradeck_pick"] = {
-    "micon": "pack.webp",  # TODO: more custom event icons
+    "micon": "pack.webp",
     "mdesc": "Pick an Archetypal Extra Deck Card of the previous area",
     "parts": [],
     "chain": "fork: archetypal_first_extradeck_pick",
 }
 text_objects["old_power_pick"] = {
-    "micon": "pack.webp",  # TODO: more custom event icons
+    "micon": "pack.webp",
     "mdesc": "Maximizing the Power Level of the previous area",
     "parts": [],
     "chain": "fork: archetypal_first_power_pick",
@@ -931,7 +993,7 @@ for area in areas:
 
 choice_objects["has_won"] = {
     "image": "endless_engine_argyro_system.webp",
-    "title": "You have won the <<game_mode_setting>>!<<win_count>> Do you want to keep playing, or proceed to the ending screen?",
+    "title": "You have won the <<game_mode_setting>>! Do you want to keep playing, or proceed to the ending screen?",
     "list": [
         {
             "name": "Continue playing",
@@ -949,7 +1011,7 @@ choice_objects["has_won"] = {
 }
 choice_objects["has_lost"] = {
     "image": "endless_engine_argyro_system.webp",
-    "title": "You have lost the <<game_mode_setting>>!<<loss_count>> Do you want to keep playing, or proceed to the ending screen?",
+    "title": "You have lost the <<game_mode_setting>>! Do you want to keep playing, or proceed to the ending screen?",
     "list": [
         {
             "name": "Continue playing",
@@ -1183,7 +1245,7 @@ bans_objects = {} # Removed until there might be a way to silently ban cards aga
 
 # region duel_objects
 duel_objects = {}
-for i in range(stage_count):
+for i in range(stage_count-1):
     enemy = "therion_irregular" if i <= 1 else "therion_empress_alasia"
     duel_objects[f"duel_{i}"] = {
         "image": "endless_engine_argyro_system.webp",
@@ -1193,6 +1255,15 @@ for i in range(stage_count):
         "wins": f"text: duel_{i}_win",
         "lose": f"text: duel_{i}_lose",
     }
+# last duel
+duel_objects[f"duel_{stage_count-1}"] = {
+    "image": "endless_engine_argyro_system.webp",
+    "dbimg": f"therion_empress_alasia_avatar.webp",
+    "title": transformToName("therion_empress_alasia"),
+    "lives": 0,
+    "wins": "ends: win",
+    "lose": "ends: lose",
+}
 # endregion
 
 # region vars_objects

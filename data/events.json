@@ -1798,12 +1798,39 @@
             "parts": [],
             "chain": "fork: wetlands_pack_1_dialog_fork"
         },
-        "wetlands_select_path": {
+        "wetlands_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "wetlands.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "ronintoadin_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Ronintoadin"
+                },
+                {
+                    "type": "text",
+                    "content": "We are experienced warriors, but against the empress we will require bigger numbers... I suggest we venture to a new area!"
+                }
+            ],
+            "chain": "choice: wetlands_select_path"
+        },
+        "wetlands_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "wetlands.webp",
             "parts": [],
             "chain": "choice: wetlands_select_path"
+        },
+        "wetlands_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "wetlands.webp",
+            "parts": [],
+            "chain": "fork: wetlands_select_path_dialog_fork"
         },
         "ancient_forest_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -1958,12 +1985,39 @@
             "parts": [],
             "chain": "fork: ancient_forest_pack_1_dialog_fork"
         },
-        "ancient_forest_select_path": {
+        "ancient_forest_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "ancient_forest.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "baby_raccoon_ponpoko_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Baby Raccoon Ponpoko"
+                },
+                {
+                    "type": "text",
+                    "content": "The empress is way too overpowered! I bet we'll defeat her with more friends tho, so let's visit a new area!"
+                }
+            ],
+            "chain": "choice: ancient_forest_select_path"
+        },
+        "ancient_forest_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "ancient_forest.webp",
             "parts": [],
             "chain": "choice: ancient_forest_select_path"
+        },
+        "ancient_forest_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "ancient_forest.webp",
+            "parts": [],
+            "chain": "fork: ancient_forest_select_path_dialog_fork"
         },
         "cynet_universe_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2118,12 +2172,39 @@
             "parts": [],
             "chain": "fork: cynet_universe_pack_1_dialog_fork"
         },
-        "cynet_universe_select_path": {
+        "cynet_universe_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "cynet_universe.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "stack_reviver_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Stack Reviver"
+                },
+                {
+                    "type": "text",
+                    "content": "00111110 00100000 01000101 01110110 01100001 01101100 01110101 01100001 01110100 01100101 00111010 00100000 01100101 01101101 01110000 01110010 01100101 01110011 01110011 00101110 01110000 01101111 01110111 01100101 01110010 00100000 00111110 00100000 01110100 01101000 01101001 01110011 00101110 01110000 01101111 01110111 01100101 01110010 00001010 00111110 00100000 01010010 01100101 01110011 01110101 01101100 01110100 00111010 00100000 01110100 01110010 01110101 01100101 00001010 00111110 00100000 01000001 01100011 01110100 01101001 01101111 01101110 00111010 00100000 01000010 01000110 01010011 00100000 01101001 01101110 01101001 01110100 01101001 01100001 01101100 01101001 01111010 01100101 01100100"
+                }
+            ],
+            "chain": "choice: cynet_universe_select_path"
+        },
+        "cynet_universe_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "cynet_universe.webp",
             "parts": [],
             "chain": "choice: cynet_universe_select_path"
+        },
+        "cynet_universe_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "cynet_universe.webp",
+            "parts": [],
+            "chain": "fork: cynet_universe_select_path_dialog_fork"
         },
         "dark_world_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2278,12 +2359,39 @@
             "parts": [],
             "chain": "fork: dark_world_pack_1_dialog_fork"
         },
-        "dark_world_select_path": {
+        "dark_world_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "dark_world.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "dark_beckoning_beast_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Dark Beckoning Beast"
+                },
+                {
+                    "type": "text",
+                    "content": "Listen, that empress has a lot of evil energy. I will release you, so you can defeat her and bring her soul to the Dark World."
+                }
+            ],
+            "chain": "choice: dark_world_select_path"
+        },
+        "dark_world_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "dark_world.webp",
             "parts": [],
             "chain": "choice: dark_world_select_path"
+        },
+        "dark_world_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "dark_world.webp",
+            "parts": [],
+            "chain": "fork: dark_world_select_path_dialog_fork"
         },
         "deepest_depths_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2438,12 +2546,39 @@
             "parts": [],
             "chain": "fork: deepest_depths_pack_1_dialog_fork"
         },
-        "deepest_depths_select_path": {
+        "deepest_depths_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "deepest_depths.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "paces_light_of_the_ghoti_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Paces, Light of the Ghoti"
+                },
+                {
+                    "type": "text",
+                    "content": "^^"
+                }
+            ],
+            "chain": "choice: deepest_depths_select_path"
+        },
+        "deepest_depths_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "deepest_depths.webp",
             "parts": [],
             "chain": "choice: deepest_depths_select_path"
+        },
+        "deepest_depths_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "deepest_depths.webp",
+            "parts": [],
+            "chain": "fork: deepest_depths_select_path_dialog_fork"
         },
         "world_armor_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2569,15 +2704,15 @@
             "parts": [
                 {
                     "type": "bust",
-                    "content": "paces_light_of_the_ghoti_bust.webp"
+                    "content": "crusadia_krawler_bust.webp"
                 },
                 {
                     "type": "name",
-                    "content": "Paces, Light of the Ghoti"
+                    "content": "Crusadia Krawler"
                 },
                 {
                     "type": "text",
-                    "content": "!!"
+                    "content": "More of them keep coming, but so far it's been working so let's continue"
                 }
             ],
             "vars": "chain_to_ed=>false",
@@ -2598,12 +2733,39 @@
             "parts": [],
             "chain": "fork: world_armor_pack_1_dialog_fork"
         },
-        "world_armor_select_path": {
+        "world_armor_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "world_armor.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "crusadia_krawler_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Crusadia Krawler"
+                },
+                {
+                    "type": "text",
+                    "content": "I think our swarm is filled with the strongest insects by now, let's leave this area!"
+                }
+            ],
+            "chain": "choice: world_armor_select_path"
+        },
+        "world_armor_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "world_armor.webp",
             "parts": [],
             "chain": "choice: world_armor_select_path"
+        },
+        "world_armor_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "world_armor.webp",
+            "parts": [],
+            "chain": "fork: world_armor_select_path_dialog_fork"
         },
         "geartown_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2758,12 +2920,39 @@
             "parts": [],
             "chain": "fork: geartown_pack_1_dialog_fork"
         },
-        "geartown_select_path": {
+        "geartown_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "geartown.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "crystron_citree_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Crystron Citree"
+                },
+                {
+                    "type": "text",
+                    "content": "I think do defeat that empress we need to modify the machines with some new technology, let's explore some new areas!"
+                }
+            ],
+            "chain": "choice: geartown_select_path"
+        },
+        "geartown_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "geartown.webp",
             "parts": [],
             "chain": "choice: geartown_select_path"
+        },
+        "geartown_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "geartown.webp",
+            "parts": [],
+            "chain": "fork: geartown_select_path_dialog_fork"
         },
         "world_tree_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -2918,12 +3107,39 @@
             "parts": [],
             "chain": "fork: world_tree_pack_1_dialog_fork"
         },
-        "world_tree_select_path": {
+        "world_tree_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "world_tree.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "predaplant_chlamydosundew_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Predaplant Chlamydosundew"
+                },
+                {
+                    "type": "text",
+                    "content": "The symbiosis is working... let's grow to even further areas!"
+                }
+            ],
+            "chain": "choice: world_tree_select_path"
+        },
+        "world_tree_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "world_tree.webp",
             "parts": [],
             "chain": "choice: world_tree_select_path"
+        },
+        "world_tree_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "world_tree.webp",
+            "parts": [],
+            "chain": "fork: world_tree_select_path_dialog_fork"
         },
         "psychic_feel_zone_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -3078,12 +3294,39 @@
             "parts": [],
             "chain": "fork: psychic_feel_zone_pack_1_dialog_fork"
         },
-        "psychic_feel_zone_select_path": {
+        "psychic_feel_zone_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "psychic_feel_zone.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "psy_frame_driver_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "PSY-Frame Driver"
+                },
+                {
+                    "type": "text",
+                    "content": "Let's fill your deck with some other monsters, I think if you keep drawing me we won't defeat the empress..."
+                }
+            ],
+            "chain": "choice: psychic_feel_zone_select_path"
+        },
+        "psychic_feel_zone_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "psychic_feel_zone.webp",
             "parts": [],
             "chain": "choice: psychic_feel_zone_select_path"
+        },
+        "psychic_feel_zone_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "psychic_feel_zone.webp",
+            "parts": [],
+            "chain": "fork: psychic_feel_zone_select_path_dialog_fork"
         },
         "venom_swamp_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -3238,12 +3481,39 @@
             "parts": [],
             "chain": "fork: venom_swamp_pack_1_dialog_fork"
         },
-        "venom_swamp_select_path": {
+        "venom_swamp_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "venom_swamp.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "reptilianne_lamia_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Reptilianne Lamia"
+                },
+                {
+                    "type": "text",
+                    "content": "I'm getting a bit hungry... But I wanna save you for later, let's go and find some prey!"
+                }
+            ],
+            "chain": "choice: venom_swamp_select_path"
+        },
+        "venom_swamp_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "venom_swamp.webp",
             "parts": [],
             "chain": "choice: venom_swamp_select_path"
+        },
+        "venom_swamp_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "venom_swamp.webp",
+            "parts": [],
+            "chain": "fork: venom_swamp_select_path_dialog_fork"
         },
         "grand_spellbook_tower_start_text": {
             "micon": "fallen_of_argyros_event.webp",
@@ -3398,12 +3668,39 @@
             "parts": [],
             "chain": "fork: grand_spellbook_tower_pack_1_dialog_fork"
         },
-        "grand_spellbook_tower_select_path": {
+        "grand_spellbook_tower_select_path_text": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "grand_spellbook_tower.webp",
+            "parts": [
+                {
+                    "type": "bust",
+                    "content": "gagaga_sister_bust.webp"
+                },
+                {
+                    "type": "name",
+                    "content": "Gagaga Sister"
+                },
+                {
+                    "type": "text",
+                    "content": "If we want to become master spellcasters aswell, we'll need to explore the world!"
+                }
+            ],
+            "chain": "choice: grand_spellbook_tower_select_path"
+        },
+        "grand_spellbook_tower_select_path_no_text": {
             "micon": "area.webp",
             "mdesc": "Continue Traveling",
             "image": "grand_spellbook_tower.webp",
             "parts": [],
             "chain": "choice: grand_spellbook_tower_select_path"
+        },
+        "grand_spellbook_tower_select_path": {
+            "micon": "area.webp",
+            "mdesc": "Continue Traveling",
+            "image": "grand_spellbook_tower.webp",
+            "parts": [],
+            "chain": "fork: grand_spellbook_tower_select_path_dialog_fork"
         },
         "duel_0_text": {
             "micon": "therion_irregular.webp",
@@ -5009,7 +5306,7 @@
         },
         "has_won": {
             "image": "endless_engine_argyro_system.webp",
-            "title": "You have won the <<game_mode_setting>>!<<win_count>> Do you want to keep playing, or proceed to the ending screen?",
+            "title": "You have won the <<game_mode_setting>>! Do you want to keep playing, or proceed to the ending screen?",
             "list": [
                 {
                     "name": "Continue playing",
@@ -5027,7 +5324,7 @@
         },
         "has_lost": {
             "image": "endless_engine_argyro_system.webp",
-            "title": "You have lost the <<game_mode_setting>>!<<loss_count>> Do you want to keep playing, or proceed to the ending screen?",
+            "title": "You have lost the <<game_mode_setting>>! Do you want to keep playing, or proceed to the ending screen?",
             "list": [
                 {
                     "name": "Continue playing",
@@ -5461,6 +5758,14 @@
                 "dialog_setting=false": "text: wetlands_pack_1_no_text"
             }
         ],
+        "wetlands_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: wetlands_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: wetlands_select_path_no_text"
+            }
+        ],
         "ancient_forest_start_dialog_fork": [
             {
                 "dialog_setting=true": "text: ancient_forest_start_text"
@@ -5483,6 +5788,14 @@
             },
             {
                 "dialog_setting=false": "text: ancient_forest_pack_1_no_text"
+            }
+        ],
+        "ancient_forest_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: ancient_forest_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: ancient_forest_select_path_no_text"
             }
         ],
         "cynet_universe_start_dialog_fork": [
@@ -5509,6 +5822,14 @@
                 "dialog_setting=false": "text: cynet_universe_pack_1_no_text"
             }
         ],
+        "cynet_universe_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: cynet_universe_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: cynet_universe_select_path_no_text"
+            }
+        ],
         "dark_world_start_dialog_fork": [
             {
                 "dialog_setting=true": "text: dark_world_start_text"
@@ -5531,6 +5852,14 @@
             },
             {
                 "dialog_setting=false": "text: dark_world_pack_1_no_text"
+            }
+        ],
+        "dark_world_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: dark_world_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: dark_world_select_path_no_text"
             }
         ],
         "deepest_depths_start_dialog_fork": [
@@ -5557,6 +5886,14 @@
                 "dialog_setting=false": "text: deepest_depths_pack_1_no_text"
             }
         ],
+        "deepest_depths_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: deepest_depths_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: deepest_depths_select_path_no_text"
+            }
+        ],
         "world_armor_start_dialog_fork": [
             {
                 "dialog_setting=true": "text: world_armor_start_text"
@@ -5579,6 +5916,14 @@
             },
             {
                 "dialog_setting=false": "text: world_armor_pack_1_no_text"
+            }
+        ],
+        "world_armor_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: world_armor_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: world_armor_select_path_no_text"
             }
         ],
         "geartown_start_dialog_fork": [
@@ -5605,6 +5950,14 @@
                 "dialog_setting=false": "text: geartown_pack_1_no_text"
             }
         ],
+        "geartown_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: geartown_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: geartown_select_path_no_text"
+            }
+        ],
         "world_tree_start_dialog_fork": [
             {
                 "dialog_setting=true": "text: world_tree_start_text"
@@ -5627,6 +5980,14 @@
             },
             {
                 "dialog_setting=false": "text: world_tree_pack_1_no_text"
+            }
+        ],
+        "world_tree_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: world_tree_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: world_tree_select_path_no_text"
             }
         ],
         "psychic_feel_zone_start_dialog_fork": [
@@ -5653,6 +6014,14 @@
                 "dialog_setting=false": "text: psychic_feel_zone_pack_1_no_text"
             }
         ],
+        "psychic_feel_zone_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: psychic_feel_zone_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: psychic_feel_zone_select_path_no_text"
+            }
+        ],
         "venom_swamp_start_dialog_fork": [
             {
                 "dialog_setting=true": "text: venom_swamp_start_text"
@@ -5677,6 +6046,14 @@
                 "dialog_setting=false": "text: venom_swamp_pack_1_no_text"
             }
         ],
+        "venom_swamp_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: venom_swamp_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: venom_swamp_select_path_no_text"
+            }
+        ],
         "grand_spellbook_tower_start_dialog_fork": [
             {
                 "dialog_setting=true": "text: grand_spellbook_tower_start_text"
@@ -5699,6 +6076,14 @@
             },
             {
                 "dialog_setting=false": "text: grand_spellbook_tower_pack_1_no_text"
+            }
+        ],
+        "grand_spellbook_tower_select_path_dialog_fork": [
+            {
+                "dialog_setting=true": "text: grand_spellbook_tower_select_path_text"
+            },
+            {
+                "dialog_setting=false": "text: grand_spellbook_tower_select_path_no_text"
             }
         ],
         "duel_0_dialog_fork": [
@@ -6096,8 +6481,8 @@
             "dbimg": "therion_empress_alasia_avatar.webp",
             "title": "Therion Empress Alasia",
             "lives": 0,
-            "wins": "text: duel_4_win",
-            "lose": "text: duel_4_lose"
+            "wins": "ends: win",
+            "lose": "ends: lose"
         }
     },
     "vars": {},
